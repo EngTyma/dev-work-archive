@@ -4,38 +4,49 @@
 /* boder-box */
 
 
-div{
+/* div{ */
     /*border-width: 2px;
     border-style: solid;
     border-color: red;
     *//*border: 2px dotted teal;
-    */border-left: 2px solid teal;
+    */
+   /* border-left: 2px solid teal;
     border-top: 3px dotted darkblue;
    border-right: 1px solid dodgerblue;
-   border-bottom: 1px solid teal;
+   border-bottom: 1px solid teal; */
    /* padding: 20px; */
    /* padding-top: 30px;
    padding-left: 10px;
    text-align: right;
    padding-right:20px ; */
-   padding: 10px 0px 3px;
-   margin: 0px 40px;
+   /* padding: 10px 0px 3px;
+   margin: 0px 40px; */
    /*margin-top: 20px;
    margin-left: 20px;
    margin-right: 20px;
    margin-bottom: 20px; */
-}
+/* } */
 
 /* background */
 
-div{
+.example{
     height: 100vh;
-    /* background-color: greenyellow;
-    background-image: url("https://images.unsplash.com/photo-1666114478847-c478d8669cf8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-background-repeat: no-repeat;
+    background-color: greenyellow;
+    /* background-image: url("https://images.unsplash.com/photo-1666114478847-c478d8669cf8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); */
+/* background-repeat: no-repeat;
 background-size: cover;
 background-position: bottom;
-background-attachment: scroll; */
+background-attachment:fixed; */
 
 background: url("https://i.pinimg.com/474x/32/08/68/3208689f5d38b12415dd749244b1054c.jpg") no-repeat center/cover fixed;
+}
+
+.back-imge{
+    background-image: linear-gradient(rgba(73, 73, 252, 0.516),rgba(0, 128, 0, 0.461)),
+     url("https://www.wbcsd.org/wp-content/uploads/2023/10/Every-sector-must-play-their-part-in-contributing-towards-a-nature-positive-future.-Here-s-how_i1140-1024x576.webp") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 100vh;
 }
