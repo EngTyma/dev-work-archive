@@ -66,11 +66,16 @@ background: url("https://i.pinimg.com/474x/32/08/68/3208689f5d38b12415dd749244b1
 
 
     /* by default the main axis goes from the left to right , the cross axis crosses the main axis nd goes from top to the buttom by default  */
-    flex-direction: column; 
+    flex-direction: row; 
     /* flex-direction: column-reverse;*/
-
-    justify-content: flex-end;
+gap: 30px;
+    /* justify-content: space-between; */
+    justify-content: space-around;
     height: 100vh;
+
+    /* cross axis */
+
+    align-items: center;
  }
 
 .box{
@@ -78,6 +83,6 @@ color: #fff;
 background: dodgerblue;
 width: 30px;
 padding: 10px;
-margin: 5px;
+/* margin: 5px; */
 text-align: center;
 }
