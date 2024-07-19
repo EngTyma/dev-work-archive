@@ -1,6 +1,10 @@
 div{
-    /* border-width: 2px;
+    /*border-width: 2px;
     border-style: solid;
-    border-color: red; */
-    border: 2px solid orange;
+    border-color: red;
+    *//*border: 2px dotted teal;
+    */border-left: 2px solid teal;
+    border-top: 3px dotted darkblue;
+   border-right: 1px solid dodgerblue;
+   border-bottom: 1px solid teal;
 }
