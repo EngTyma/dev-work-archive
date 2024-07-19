@@ -50,3 +50,34 @@ background: url("https://i.pinimg.com/474x/32/08/68/3208689f5d38b12415dd749244b1
     background-attachment: scroll;
     height: 100vh;
 }
+
+.container{
+    display: flex;
+    border: 2px solid black;
+    /* there are two axis along which u can alighn your flex box items the main axis nd cross axis */
+    flex-direction: row; /*by defualt */
+/* flex-direction: row-reverse; */
+    
+
+    /* just content control where and how the items should be aligned on the main axis */
+    justify-content: start; /*  defult  */
+    /* justify-content: center;
+    justify-content: flex-end; */
+
+
+    /* by default the main axis goes from the left to right , the cross axis crosses the main axis nd goes from top to the buttom by default  */
+    flex-direction: column; 
+    /* flex-direction: column-reverse;*/
+
+    justify-content: flex-end;
+    height: 100vh;
+ }
+
+.box{
+color: #fff;
+background: dodgerblue;
+width: 30px;
+padding: 10px;
+margin: 5px;
+text-align: center;
+}
