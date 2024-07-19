@@ -30,8 +30,12 @@ div{
 
 div{
     height: 100vh;
-    background-color: greenyellow;
-    background-image: url("https://images.unsplash.com/photo-1718544825047-8d4dd9c23f1d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /* background-color: greenyellow;
+    background-image: url("https://images.unsplash.com/photo-1666114478847-c478d8669cf8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 background-repeat: no-repeat;
 background-size: cover;
+background-position: bottom;
+background-attachment: scroll; */
+
+background: url("https://i.pinimg.com/474x/32/08/68/3208689f5d38b12415dd749244b1054c.jpg") no-repeat center/cover fixed;
 }
