@@ -3,26 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my webpage</title>
-</head>
-<style>
-    div{
-        background-color: dodgerblue;
-        flex-direction: flex-end;
+    <title>My Webpage</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        /**
+         * Styles for the navigation menu container
+         * 
+         * Sets the background color to dodger blue and 
+         * flex direction to flex-end, which means the 
+         * last item in the container will be aligned to 
+         * the end of the container.
+         */
+        div {
+            background-color: rgba(30, 143, 255, 0.82);;
+            /* flex-direction: flex-end; */
+        }
+       
+        /**
+         * Styles for the navigation menu items
+         * 
+         * Sets the display property to flex, which makes 
+         * the items display in a flexible box layout. 
+         * Flex direction is set to row, which means the 
+         * items will be displayed horizontally. 
+         * List style type is set to none to remove the 
+         * bullet points, and text decoration is set to 
+         * none to remove the underline from the links. 
+         * Padding is set to 5px to add some space around 
+         * the items, and color is set to white to make 
+         * the text visible on the dodger blue background.
+         */
+        ul, li, a {
+            display: flex;
+            flex-direction:row;
+            justify-content: flex-end;
 
-    }
-    ul,li,a{
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-        text-decoration: none;
-        padding: 5px;
-        color: white;
-    }
-</style>
+            list-style-type: none;
+            text-decoration: none;
+            padding: 5px;
+            color: white;
+        }
+        a{
+            background-color: dodgerblue;
+            border-radius: 3px;
+            padding: 6px;
+            margin-left: 5px;
+        }
+        a:hover{
+            background-color: royalblue;
+            cursor: pointer;
+        }
+    </style>
+</head>
 <body>
+    <!-- /**
+     * Navigation menu container
+     * 
+     * Contains the navigation menu items
+     */ -->
     <div>
         <ul>
+            <!-- /**
+             * Navigation menu item
+             * 
+             * Example: Home link
+             */ -->
+             <p>my first website</p>
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Contact</a></li>
@@ -30,8 +78,14 @@
         </ul>
     </div>
 
+    <!-- /**
+     * Home page container
+     * 
+     * This div is currently empty, but can be used to 
+     * add content specific to the home page.
+     */ -->
     <div class="home">
-
+        <!-- Add home page content here -->
     </div>
 </body>
 </html>
