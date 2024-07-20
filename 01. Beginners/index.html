@@ -3,139 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS In Depth Examples</title>
-    <style>
-        /* External CSS */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
-            color: #333;
-            margin: 0;
-            padding: 0;
-        }
-
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        /* Colors in Depth */
-        .primary-text {
-            color: #007bff; /* Blue */
-        }
-
-        .secondary-text {
-            color: #6c757d; /* Gray */
-        }
-
-        .link-text {
-            color: #28a745; /* Green */
-        }
-
-        .error-text {
-            color: #dc3545; /* Red */
-        }
-
-        /* Units in Depth */
-        .box {
-            width: 200px;
-            height: 150px;
-            margin: 20px;
-            padding: 20px;
-            border: 2px solid #333;
-        }
-
-        .box.px {
-            width: 200px;
-            height: 150px;
-            margin: 20px;
-            padding: 20px;
-            border: 2px solid #333;
-        }
-
-        .box.rem {
-            width: 12.5rem; /* 200px converted to rem */
-            height: 9.375rem; /* 150px converted to rem */
-            margin: 1.25rem; /* 20px converted to rem */
-            padding: 1.25rem; /* 20px converted to rem */
-            border: 0.125rem solid #333; /* 2px converted to rem */
-        }
-
-        /* Fonts in Depth */
-        .font-example {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 18px;
-            font-weight: bold;
-            line-height: 1.5;
-        }
-
-        /* Box Model in Depth */
-        .box-model {
-            width: 300px;
-            height: 200px;
-            padding: 20px;
-            border: 2px solid #333;
-            margin: 20px;
-            background-color: #fff;
-        }
-
-        /* Background Properties in Depth */
-        .background-example {
-            width: 300px;
-            height: 200px;
-            padding: 20px;
-            border: 2px solid #333;
-            margin: 20px;
-            /* background-color: #f8f9fa; */
-            background-image: url("img/back.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-
-        }
-    </style>
+    <title>Restaurant or Supermarket Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    /* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+/* 
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+} */
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 255, 0.187),rgba(0, 0, 255, 0.279)), url("https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=600");
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    /* color: black; */
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+/* .hero p{
+    color: black;
+} */
+.menu {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.menu h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.menu-item {
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.menu-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.menu-item span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
 <body>
-    <div class="container">
-        <h1>3 Ways To Write CSS</h1>
-        <p>This example demonstrates three ways to write CSS: External, Internal, and Inline.</p>
-    </div>
+    <!-- <header>
+        <div class="container">
+            <h1>Our Restaurant</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header> -->
 
-    <div class="container">
-        <h1>CSS Colors In Depth</h1>
-        <p>Examples of using different colors in CSS:</p>
-        <p class="primary-text">Primary Text Color (Blue)</p>
-        <p class="secondary-text">Secondary Text Color (Gray)</p>
-        <p class="link-text">Link Text Color (Green)</p>
-        <p class="error-text">Error Text Color (Red)</p>
-    </div>
+    <section class="hero">
+        <div class="container">
+            <h2>Welcome to Our Restaurant</h2>
+            <p>Delicious food awaits you!</p>
+        </div>
+    </section>
 
-    <div class="container">
-        <h1>CSS Units In Depth</h1>
-        <p>Examples of using different units in CSS:</p>
-        <div class="box">Box with pixel units</div>
-        <div class="box rem">Box with rem units</div>
-    </div>
+    <section class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <img src="https://media.istockphoto.com/id/643764088/photo/stack-breakfast.jpg?s=612x612&w=0&k=20&c=i7ND8YwieWS0kRH6r8ZsZCoWyy7Hxxz_MKOpcDJQcb8=" alt="Food Item">
+                    <h3>Pancakesand Eggs</h3>
+                    <!-- <p>Description of the food item.</p> -->
+                    <span>$10</span>
+                </div>
+                <div class="menu-item">
+                    <img src="https://images.pexels.com/photos/674574/pexels-photo-674574.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Food Item">
+                    <h3>Rice</h3>
+                    <!-- <p>Description of the food item.</p> -->
+                    <span>$12</span>
+                </div>
+                <!-- Add more menu items as needed -->
+            </div>
+        </div>
+    </section>
 
-    <div class="container">
-        <h1>CSS Fonts In Depth</h1>
-        <p>Examples of different font properties in CSS:</p>
-        <p class="font-example">Example Text with Custom Fonts</p>
-    </div>
-
-    <div class="container">
-        <h1>CSS Box Model In Depth</h1>
-        <p>Examples of different properties of the CSS box model:</p>
-        <div class="box-model">Box Model Example</div>
-    </div>
-
-    <div class="container">
-        <h1>CSS Background Properties In Depth</h1>
-        <p>Examples of using background properties in CSS:</p>
-        <div class="background-example">Background Example</div>
-    </div>
+    <!-- <footer>
+        <div class="container">
+            <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+        </div>
+    </footer> -->
 </body>
 </html>
