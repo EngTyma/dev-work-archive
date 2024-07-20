@@ -4,58 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Webpage</title>
-    <style>
-        *{
-            margin: 0;
-        }
-        /**
-         * Styles for the navigation menu container
-         * 
-         * Sets the background color to dodger blue and 
-         * flex direction to flex-end, which means the 
-         * last item in the container will be aligned to 
-         * the end of the container.
-         */
-        div {
-            background-color: rgba(30, 143, 255, 0.82);;
-            /* flex-direction: flex-end; */
-        }
-       
-        /**
-         * Styles for the navigation menu items
-         * 
-         * Sets the display property to flex, which makes 
-         * the items display in a flexible box layout. 
-         * Flex direction is set to row, which means the 
-         * items will be displayed horizontally. 
-         * List style type is set to none to remove the 
-         * bullet points, and text decoration is set to 
-         * none to remove the underline from the links. 
-         * Padding is set to 5px to add some space around 
-         * the items, and color is set to white to make 
-         * the text visible on the dodger blue background.
-         */
-        ul, li, a {
-            display: flex;
-            flex-direction:row;
-            justify-content: flex-end;
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1rem;
+    }
+    div{
+        background-color: rgba(30, 143, 255, 0.826);
+       justify-content: flex-start;
+       color: white;
+    }
+   
+    ul ,li,a{
+        list-style-type: none;
+        text-decoration: none;
+        display: flex;
+        padding: 10px;
+        color: white;
+        justify-content: flex-end;
+        text-align: center;
+    
+    }
 
-            list-style-type: none;
-            text-decoration: none;
-            padding: 5px;
-            color: white;
-        }
-        a{
-            background-color: dodgerblue;
-            border-radius: 3px;
-            padding: 6px;
-            margin-left: 5px;
-        }
-        a:hover{
-            background-color: royalblue;
-            cursor: pointer;
-        }
-    </style>
+    a{
+        background-color: dodgerblue;
+        border-radius: 5px;
+       
+    }
+
+    a:hover{
+        background-color: rgba(0, 0, 0, 0.568);
+        cursor: pointer;
+        
+    }
+    .home{
+        background-image: linear-gradient(rgba(0, 0, 255, 0.228),rgba(0, 128, 0, 0.242)), url("img/back.png");
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+
+    }
+  
+    img {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, -50%);
+  border-radius:50% ;
+}
+.image-container {
+  text-align: center;
+}
+   </style>
 </head>
 <body>
     <!-- /**
@@ -70,7 +73,7 @@
              * 
              * Example: Home link
              */ -->
-             <p>my first website</p>
+            
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Contact</a></li>
@@ -86,6 +89,8 @@
      */ -->
     <div class="home">
         <!-- Add home page content here -->
-    </div>
+        <div class="image-container">
+            <img src="https://i.pinimg.com/474x/96/d3/3f/96d33fd1ee160febe388e5d33adf6caa.jpg" alt="Image">
+          </div>    </div>
 </body>
 </html>
