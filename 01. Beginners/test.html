@@ -1,96 +1,80 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
-   <style>
+    <title>Document</title>
+</head>
+<style>
     *{
         margin: 0;
-        padding: 0;
+        padding: 0px;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 1rem;
     }
-    div{
-        background-color: rgba(30, 143, 255, 0.826);
-       justify-content: flex-start;
-       color: white;
-    }
-   
-    ul ,li,a{
-        list-style-type: none;
-        text-decoration: none;
-        display: flex;
-        padding: 10px;
-        color: white;
-        justify-content: flex-end;
-        text-align: center;
-    
-    }
-
-    a{
-        background-color: dodgerblue;
-        border-radius: 5px;
-       
-    }
-
-    a:hover{
-        background-color: rgba(0, 0, 0, 0.568);
-        cursor: pointer;
-        
-    }
-    .home{
-        background-image: linear-gradient(rgba(0, 0, 255, 0.228),rgba(0, 128, 0, 0.242)), url("img/back.png");
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: scroll;
-
-    }
-  
-    img {
-  position: absolute;
-  left: 50%;
-  top: 100%;
-  transform: translate(-50%, -50%);
-  border-radius:50% ;
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 255, 0.153), rgba(0, 0, 255, 0.226)) ,url("https://images.pexels.com/photos/8630151/pexels-photo-8630151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-.image-container {
+.container {
+    color: #fff;
+    text-transform: capitalize;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-   </style>
-</head>
-<body>
-    <!-- /**
-     * Navigation menu container
-     * 
-     * Contains the navigation menu items
-     */ -->
-    <div>
-        <ul>
-            <!-- /**
-             * Navigation menu item
-             * 
-             * Example: Home link
-             */ -->
-            
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Blogging</a></li>
-        </ul>
-    </div>
 
-    <!-- /**
-     * Home page container
-     * 
-     * This div is currently empty, but can be used to 
-     * add content specific to the home page.
-     */ -->
-    <div class="home">
-        <!-- Add home page content here -->
-        <div class="image-container">
-            <img src="https://i.pinimg.com/474x/96/d3/3f/96d33fd1ee160febe388e5d33adf6caa.jpg" alt="Image">
-          </div>    </div>
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+} */
+
+/* .container-menu{
+    display: flex;
+    text-align: center;
+} */
+
+.container-menu h2{
+    text-align: center;
+}
+.container-menu{
+    display: flex;
+    /* flex-direction: row; */
+}
+</style>
+<body>
+    <section class="hero">
+       <div class="container">
+        <h1>Welcome to our Restaurant</h1>
+        <p>delicious food awaits you!</p>
+       </div>
+    </section>
+
+    <div class="container-menu">
+        <h2>Our Menu</h2>
+       <div class="items">
+        <img src="https://i.pinimg.com/474x/ec/a9/56/eca9561df15ff6367a899a92d31a4ee5.jpg" alt="">
+        <h3>Item 1</h3>
+        <p>$10</p>
+       </div>
+       <div class="items">
+        <img src="https://i.pinimg.com/474x/38/95/d5/3895d52304706baa8ac4454fc07aaec7.jpg" alt="">
+        <h3>Item 2</h3>
+        <p>$12</p>
+       </div>
+       <div class="items">      
+        <img src="https://i.pinimg.com/474x/2e/3a/55/2e3a55a85336117640a7a28df107a089.jpg"   alt="">
+        <h3>Item 3</h3>
+        <p>$15</p>
+        </div>
+       </div>
+    </div>
 </body>
-</html>
+</html> -->
