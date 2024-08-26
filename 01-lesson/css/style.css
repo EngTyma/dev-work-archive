@@ -9,14 +9,19 @@
         /* styles */
         color: dodgerblue;
         }
-        /* 3. Class Selector */
-        .class {
-            /* styles */
-            color: green;
-        }
-
+      
 
 /* H1 {
 color: blue;
 font-size: 30px;
 } */
+
+  /* 3. Class Selector */
+  .class {
+    /* styles */
+    color: green;
+}
+/* 4. descendant selector */
+.class > a{
+    color: red;
+}
