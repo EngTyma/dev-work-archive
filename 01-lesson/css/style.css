@@ -4,11 +4,17 @@
     /*styles*/
     background-color: aliceblue;
 }
+
+ /* Universal Selector */
+ /* * {
+ margin: 0;
+ padding: 0;
+} */
     /* 2. Type Selector */
-    h1 {
-        /* styles */
+    /* h1 {
+        styles
         color: dodgerblue;
-        }
+        } */
       
 
 /* H1 {
@@ -16,12 +22,49 @@ color: blue;
 font-size: 30px;
 } */
 
-  /* 3. Class Selector */
-  .class {
-    /* styles */
-    color: green;
+ 
+
+/* Type Selector */
+p {
+  font-size: 16px;
 }
-/* 4. descendant selector */
-.class > a{
-    color: red;
+
+/* Class Selector */
+.highlight {
+  background-color: yellow;
+}
+
+/* ID Selector */
+#unique {
+  font-weight: bold;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+  border: 1px solid black;
+}
+
+/* Descendant Selector */
+div p {
+  color: green;
+}
+
+/* Child Selector */
+div > p {
+  color: red;
+}
+
+/* Adjacent Sibling Selector */
+h1 + p {
+  color: purple;
+}
+
+/* General Sibling Selector */
+h1 ~ p {
+  color: orange;
+}
+
+/* Group Selector */
+h1, h2 {
+  color: teal;
 }
