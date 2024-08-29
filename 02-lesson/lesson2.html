@@ -37,6 +37,16 @@ background-color: lightblue;}
 	margin-left: 0;
 	padding-left: 1rem;
 }
+/* Attribute Selector */
+input{
+    display: block;
+    margin: .5rem 0 1.5rem;
+    outline: none;
+    /* border: none; */
+}
+input[type="text"], input[type="email"]{
+    border: 1px solid #ccc;
+}
     </style> 
 </head>
 <body>
@@ -77,5 +87,8 @@ background-color: lightblue;}
          <blockquote>I am blockquote inside a section with a class of "parent-section".</blockquote>
  
  </section>
+<!-- Attribute Selector -->
+ <input type="text" id="example-1" disabled>
+ <input type="email" id="example-2">
 </body>
 </html>
