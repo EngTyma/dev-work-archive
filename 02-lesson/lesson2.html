@@ -9,15 +9,26 @@
         p {
 	color: #6a266e;
 }
+/* Class Selector */
+.special-paragraph{
+    color: #cf8600;
+}
     </style>
 </head>
 <body>
+    <!-- Element Selector -->
     <h1>i'm a heading so the color is not applied to me</h1>
     <p>I am a paragraph, so the color is applied to me.</p>
 ​
 <p>I am also paragraph, so I get the color too.</p>
 ​
 <p>Me too. I am another paragraph.</p>
+<!-- Class Selector -->
 
+<p>I am  a paragraph with no class, so the color is not applied to me.</p>
+
+<p class="special-paragraph">I am  paragraph with the correct class, so I get the color.</p>
+
+<p class="another-paragraph">I have a different class, so I do not get the color.</p>
 </body>
 </html>
