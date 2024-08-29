@@ -13,6 +13,13 @@
 .special-paragraph{
     color: #cf8600;
 }
+/* Decendant Combinator */
+.parent-section h3{
+    background-color: pink;
+}
+.parent-section div p{
+    background-color:lightblue ;
+}
     </style>
 </head>
 <body>
@@ -30,5 +37,13 @@
 <p class="special-paragraph">I am  paragraph with the correct class, so I get the color.</p>
 
 <p class="another-paragraph">I have a different class, so I do not get the color.</p>
+<!-- Decendant Combinator -->
+ <section class="parent-section">
+    <h3>I'm an h3 that is the child of hte "parent-section"class, so i get a pink background</h3>
+    <div>
+        <p>i'm paragraph that is a grandchild of the "parent-section" class, so i get a blue background. </p>
+     </div> 
+</section>
+ 
 </body>
 </html>
