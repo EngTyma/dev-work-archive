@@ -1,0 +1,9 @@
+/* Direct Child Combinator */
+.menu > li {
+    margin-bottom: 10px;
+  }
+  
+  .container > .text {
+    color: red;
+  }
+  
