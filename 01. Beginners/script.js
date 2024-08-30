@@ -91,8 +91,13 @@ console.log(selectedcolor);
 
 
 /*=============================================
-=            lesson 6        =
+=            lesson 6  functions      =
 =============================================*/
+
+function greet(name,age){
+    console.log(`Hello ${name} you are ${age} years old`
+        );
+        
 
 /*=====  End of lesson6  ======*/
 
