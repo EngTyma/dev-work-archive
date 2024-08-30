@@ -27,9 +27,11 @@ console.log(z);
 =            lesson2 constants        =
 =============================================*/
 
-// first example
-const PI = 3.14;
-console.log(PI);
+const i = "intissar";
+// i="amjad";
+
+console.log(i);
+
 
 
 /*=====  End of lesson2  ======*/
