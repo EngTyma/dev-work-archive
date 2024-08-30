@@ -83,7 +83,9 @@ console.log(person["name"]);
 =============================================*/
 
 let selectedcolor = ['red','black'];
-console.log(selectedcolor[0]);
+selectedcolor = "yellow";
+// console.log(selectedcolor[0]);
+console.log(selectedcolor);
 
 /*=====  End of lesson5  ======*/
 
