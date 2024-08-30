@@ -1,10 +1,11 @@
-// lesson1 Variables
+// lesson1 Variables first example
 console.log('Hello, world!');
 
-// lesson2 Variables
+// second example
 let name = 'ibtahala';
 console.log(name);
 
-// lesson3 Variables
+// third example
 let age = 25;
 console.log(age);
+
