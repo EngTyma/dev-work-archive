@@ -1,4 +1,8 @@
-// lesson1 Variables first example
+/*=============================================
+=            lesson1 Variables            =
+=============================================*/
+//   first example
+
 console.log('Hello, world!');
 
 // second example
@@ -10,10 +14,20 @@ let age = 25;
 console.log(age);
 
 //fourth example.
-let isMarried = true;
-console.log(isMarried);
-
-x =10;
-y=6;
-z = x+y;
+var x =10;
+var y=6;
+var z = x+y;
+console.log(z);
 // fifth example
+
+/*=====  End of lesson1 Variables  ======*/
+
+ 
+/*=============================================
+=            lesson2 constants        =
+=============================================*/
+
+
+
+/*=====  End of lesson2  ======*/
+
