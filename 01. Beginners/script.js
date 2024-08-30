@@ -9,3 +9,11 @@ console.log(name);
 let age = 25;
 console.log(age);
 
+//fourth example.
+let isMarried = true;
+console.log(isMarried);
+
+x =10;
+y=6;
+z = x+y;
+// fifth example
