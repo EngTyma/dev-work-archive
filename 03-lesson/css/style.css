@@ -6,4 +6,13 @@
   .container > .text {
     color: red;
   }
-  
+
+  /* General Sibling Combinator */
+    .sibling ~ h1{
+        color: hotpink;
+    }
+
+    /*  Adjacent Sibling Combinator*/
+    p+ h3{
+color: orange;
+    }
