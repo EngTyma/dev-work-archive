@@ -76,6 +76,15 @@ let person = {
             }
 }
 
+//dot notation
+
+console.log(person.name);
+console.log(person["hobbies"]);
+//bracket notation
+console.log(person["isMarried"]);
+//console.log(person["children"][0]["name"]);
+
+
 /*=====  End of lesson4  ======*/
 
 
