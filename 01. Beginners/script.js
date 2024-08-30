@@ -57,32 +57,23 @@ let color = null; //nul literal
 /*=============================================
 =            lesson 4 objects        =
 =============================================*/
-let a = "marwan";
-let b = "ibtisam";
+let names = "Taslima";
+let age1 = 25;
+
 let person = {
-    name: "marwan",
-    age: 25,
-    address: "amman",
-    "hobbies": ["reading", "swimming"],
-    "isMarried": false,
-    "children": [
-        { name: "ibtisam", age: 2 },
-        { name: "marwan", age: 1 }
-        ],
-        "address": {
-            "street": "amman",
-            "city": "amman",
-            "country": "jordan"
-            }
-}
+    name: names,
+    age: age1,
+};
+console.log(person.name);
 
 //dot notation
 
 console.log(person.name);
-console.log(person["hobbies"]);
+
 //bracket notation
-console.log(person["isMarried"]);
-//console.log(person["children"][0]["name"]);
+
+console.log(person["name"]);
+
 
 
 /*=====  End of lesson4  ======*/
