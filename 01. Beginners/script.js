@@ -36,3 +36,18 @@ console.log(i);
 
 /*=====  End of lesson2  ======*/
 
+
+
+
+ 
+/*=============================================
+=            lesson 3 primitive datatypes        =
+=============================================*/
+
+let j = "ibtisam";//string literal
+let k = 25;//number literal
+let check = true;//boolean literal
+
+/*=====  End of lesson3  ======*/
+
+
