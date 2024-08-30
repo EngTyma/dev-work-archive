@@ -54,4 +54,29 @@ let color = null; //nul literal
 
 /*=====  End of lesson3  ======*/
 
+/*=============================================
+=            lesson 4 objects        =
+=============================================*/
+let a = "marwan";
+let b = "ibtisam";
+let person = {
+    name: "marwan",
+    age: 25,
+    address: "amman",
+    "hobbies": ["reading", "swimming"],
+    "isMarried": false,
+    "children": [
+        { name: "ibtisam", age: 2 },
+        { name: "marwan", age: 1 }
+        ],
+        "address": {
+            "street": "amman",
+            "city": "amman",
+            "country": "jordan"
+            }
+}
+
+/*=====  End of lesson4  ======*/
+
+
 
