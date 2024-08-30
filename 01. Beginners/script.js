@@ -47,6 +47,10 @@ console.log(i);
 let j = "ibtisam";//string literal
 let k = 25;//number literal
 let check = true;//boolean literal
+// let num; //
+let num = undefined;//undefined literal
+
+let color = null; //nul literal
 
 /*=====  End of lesson3  ======*/
 
