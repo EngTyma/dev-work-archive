@@ -43,6 +43,13 @@ function cars(a,b){
 }
 console.log(cars(5,6));
 
+// Define the function with the 'function' keyword
+function std(fname, lname) {
+    console.log("hello", fname, lname);
+}
+
+// Call the function with two separate arguments
+std("intissar", "ali");
 
 
 /*=====  End of Section comment block  ======*/
