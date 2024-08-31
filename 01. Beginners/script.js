@@ -82,6 +82,9 @@ const student = {
 //dot notation
 console.log(student.id);
 
+//bracket notation
+console.log(student["name"])
+;
 /*=====  End of lesson4  ======*/
 
 /*=============================================
