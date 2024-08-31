@@ -1,12 +1,12 @@
 
 /*=============================================
-=            Section comment block            =
+=            Section of non-primitive types            =
 =============================================*/
 
 
 /**
  *
- * non-primitive types 
+ *  
 1:objects
  *
  */
@@ -52,5 +52,5 @@ function std(fname, lname) {
 std("intissar", "ali");
 
 
-/*=====  End of Section comment block  ======*/
+/*=====  End of Section non-primitive types  ======*/
 
