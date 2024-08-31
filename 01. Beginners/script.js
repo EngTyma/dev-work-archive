@@ -88,8 +88,43 @@ console.log(student["name"])
 /*=====  End of lesson4  ======*/
 
 /*=============================================
+=            JavaScript Objects Assignment        =
+=============================================*/
+
+// Task 1: Object Creation
+// Create the person object with the specified properties and methods
+const person1 = {
+    firstName: "Naghma",
+    lastName: "Ahmed",
+    age: 25,
+    isStudent: true,
+
+    // Method to get the full name
+    fullName: function() {
+        return `${this.firstName} ${this.lastName}`;
+    },
+
+    // Method to describe the person
+    describe: function() {
+        const studentStatus = this.isStudent ? 'a student' : 'not a student';
+        return `${this.fullName()} is ${this.age} years old and is ${studentStatus}.`;
+    }
+};
+
+// Example usage
+console.log(person1.fullName());  // Output: Naghma Ahmed
+console.log(person1.describe());  // Output: Naghma Ahmed is 25 years old and is a student.
+
+
+/*=====  End of Assignment  ======*/
+
+/*=============================================
 =            lesson 5 Arrays        =
 =============================================*/
+
+const cars = ['item1','item2','item3'];
+// cars = "items";
+console.log(cars[2]);
 
 let selectedcolor = ['red','black'];
 selectedcolor = "yellow";
