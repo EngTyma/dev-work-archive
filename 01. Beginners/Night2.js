@@ -29,5 +29,7 @@ console.log(x);
 let a = 5;
 let b = 5;
 let z = a+b;
+
+a=a+b;
 /*=====  End of Section comment block  ======*/
 
