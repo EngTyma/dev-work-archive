@@ -33,5 +33,43 @@ a=a+b;
 a *=a;
 a -=a;
 console.log(a);
+
+
+/**
+ *
+ * Comparison Operators
+ *
+ */
+
+let c = 1;
+// relational oper...
+console.log(c>4);
+console.log(c>=1);
+console.log(c<=4);
+
+//equality oper...
+//strinct oper...(same type and value)
+console.log(c==1);
+
+
+//lost euqlity..
+
+console.log(c===1);
+
+
+/**
+ *
+ * ternary ope...
+ *
+ */
+
+let pionts = 110;
+let type = pionts > 100 ? 'Gold' : 'Silver';
+console.log(type);
+
+
+
+
+
 /*=====  End of Section operators  ======*/
 
