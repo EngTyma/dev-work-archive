@@ -6,10 +6,7 @@
 
 /* Arithmetic Operators */
 
-// Assignment Operator
-let a = 5;
-let b = 5;
-let z = a+b;
+
 
 // Addition Operator
 let x = 10;
@@ -27,5 +24,10 @@ console.log(x);
 console.log(x--);
 console.log(x);
 
+
+// Assignment Operator
+let a = 5;
+let b = 5;
+let z = a+b;
 /*=====  End of Section comment block  ======*/
 
