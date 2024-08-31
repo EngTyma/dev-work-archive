@@ -1,0 +1,9 @@
+/* boder style */
+
+.products {
+    width: 600px;
+    height: 200px;
+    background-color: dodgerblue;
+    border: 4px solid hotpink;
+    color: white;
+}
