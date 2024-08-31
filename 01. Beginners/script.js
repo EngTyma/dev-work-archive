@@ -74,7 +74,13 @@ console.log(person.name);
 
 console.log(person["name"]);
 
+const student = {
+    id:1,
+    name:"ibtihal",
+};
 
+//dot notation
+console.log(student.id);
 
 /*=====  End of lesson4  ======*/
 
@@ -107,7 +113,3 @@ function greet(name,age){
 =============================================*/
 
 /*=====  End of lesson7  ======*/
-
-
-
-
