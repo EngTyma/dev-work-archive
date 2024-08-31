@@ -32,6 +32,18 @@ console.log((school[0]));
 
 
 
+/**
+ *
+ * function
+ *
+ */
+
+function cars(a,b){
+    return a+b;
+}
+console.log(cars(5,6));
+
+
 
 /*=====  End of Section comment block  ======*/
 
