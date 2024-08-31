@@ -138,16 +138,19 @@ console.log(selectedcolor.length);
 =            lesson 6  functions      =
 =============================================*/
 
-function greet(){
-    console.log("hello world!")
+ // function expression performing task
+ function greet(name,lname){
+    console.log("hello " + name,"", + lname);
 }
-        greet();
+        greet("Anhal","Ahmed");
+       
+        //calculating function
+        function square(number){
+            return number * number;
+        }
+// let calculate = square(2);
+
+        console.log(square(2));
 
 /*=====  End of lesson6  ======*/
 
-
-/*=============================================
-=            lesson 7        =
-=============================================*/
-
-/*=====  End of lesson7  ======*/
