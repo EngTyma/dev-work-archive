@@ -129,7 +129,7 @@ console.log(cars[2]);
 let selectedcolor = ['red','black'];
 selectedcolor = "yellow";
 // console.log(selectedcolor[0]);
-console.log(selectedcolor);
+console.log(selectedcolor.length);
 
 /*=====  End of lesson5  ======*/
 
