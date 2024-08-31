@@ -29,9 +29,7 @@ console.log(x);
 let a = 5;
 let b = 9;
 let z = a+b;
-
 a=a+b;
-
 console.log(a);
 /*=====  End of Section comment block  ======*/
 
