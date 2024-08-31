@@ -30,6 +30,8 @@ let a = 5;
 let b = 9;
 let z = a+b;
 a=a+b;
+a *=a;
+a -=a;
 console.log(a);
-/*=====  End of Section comment block  ======*/
+/*=====  End of Section operators  ======*/
 
