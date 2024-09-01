@@ -88,6 +88,21 @@ switch(day) {
     console.log("Invalid day");
     }
 
+    let role;
+    switch(rorel){
+        case 'admin':
+        console.log('Admin');
+        break;
+        case 'moderator':
+        console.log('Moderator');
+        break;
+        case 'user':
+        console.log('User');
+        break;
+        default:
+        console.log('Invalid role');
+        
+    }
 
 /*=====  End of Section control flow  ======*/
 
