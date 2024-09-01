@@ -27,9 +27,9 @@ a:hover{
     text-decoration: none;
     /* color: white; */
 }
-a:visited{
+/* a:visited{
     color: #E71C23;
-}
+} */
 
 a:link{
     text-decoration: none;
@@ -46,6 +46,35 @@ font-style: 1rem;
 li:nth-child(even){
     background-color: dodgerblue;
 }
+nav {
+    background-color: #333945;
+    overflow: hidden; /* Clear floats, if you use float */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin: 0; /* Remove default margin */
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center; /* Center content vertically */
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Set text color */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Darker background on hover */
+}
+
     </style>
 </head>
 <body>
@@ -79,5 +108,14 @@ li:nth-child(even){
     <li>one 9</li>
     <li>one 10</li>
 </ul>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
 </body>
 </html>
