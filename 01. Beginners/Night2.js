@@ -67,9 +67,27 @@ let pionts = 110;
 let type = pionts > 100 ? 'Gold' : 'Silver';
 console.log(type);
 
+let pt = 100;
+let type1 = pt > 100 ? 'Gold' : 'Silver';
+console.log(type1);
+/**
+ *
+ * Logical operator ---> And, OR , NOT
+ *
+ */
 
-
-
+// AND(&&)
+let a1 = 10;
+let b1 = 20;
+// true && true
+console.log(a1>5 && b1>5);
+// false && true
+console.log(a1<5 && b1>5);
+// true && false
+console.log(a1>5 && b1<5);
+// false && false
+console.log(a1<5 && b1<5);
+// OR(||)
 
 /*=====  End of Section operators  ======*/
 
