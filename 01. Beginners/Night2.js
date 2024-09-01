@@ -88,12 +88,22 @@ console.log(a1>5 && b1<5);
 // false && false
 console.log(a1<5 && b1<5);
 
-let highIncome = true;
-let goodcreditscore = true;
-let eligibleforloan = highIncome && goodcreditscore;
-console.log(eligibleforloan);
+
 
 // OR(||)
+let highIncome = true;
+let goodcreditscore = true;
+let eligibleforloan = highIncome || goodcreditscore;
+console.log(eligibleforloan);
+
+//logical NOT (!)
+
+let a2 = 10;
+let b2 = 20;
+// true
+console.log(!a2>5);
+// false
+console.log(!a2<5);
 
 /*=====  End of Section operators  ======*/
 
