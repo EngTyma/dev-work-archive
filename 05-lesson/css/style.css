@@ -16,3 +16,27 @@ p{
     background-color:#333 ;
     color: white;
 }
+
+#box{
+    width: 100px;
+    height: 100px;
+    background-color:#b11226;
+}
+/* boder-box */
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: #333;
+    border: 1px solid darkgray;
+    box-sizing: border-box;
+}
+
+/* Box Shadow */
+/* box-shadow: horizontal-offset vertical-offset blur-radius spread-radius color; */
+.box1{
+    width: 120px;
+    height: 120px;
+    background-color: #333;
+    margin-top: 5px;
+    box-shadow: 10px 10px 8px 2px cyan;
+}
