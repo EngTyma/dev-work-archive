@@ -104,8 +104,6 @@ if (role === 'admin') {
 } else {
     console.log('Invalid role');
 }
-
-
 /**
  *
  * Loops
@@ -113,8 +111,13 @@ if (role === 'admin') {
  */
 
 // For loop
-for (let i = 0; i < 5; i++) {
-    console.log(i);
+// for (let i = 0; i < 5; i++) {
+//     console.log(i);
+// }
+
+//for loop
+for (let i =0;i<5;i++){
+    console.log("Hello World");
 }
 
 // While loop
