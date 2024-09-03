@@ -116,13 +116,18 @@ if (role === 'admin') {
 // }
 
 //for loop
-for (let i =0;i<5;i++){
-    console.log("Hello World");
+for (let i =0;i<=5;i++){
+    if (i%=2 !==0)
+        console.log(i);
+    else{
+        console.log("Hello World");
+
+    }
 }
 
 // While loop
 let j = 0;
-while (j < 5) {
+while (j <= 5) {
     console.log(j);
     j++;
 }
