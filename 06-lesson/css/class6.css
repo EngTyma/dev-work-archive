@@ -46,3 +46,73 @@ body {
 ul {
     padding-left: 20px;
 }
+
+#main {
+    min-width:20px;
+    height: 80px;
+    border: 1px solid #c3c3c3;
+    padding: 20px;
+    display: flex;
+  /*Put your code below this line*/
+  flex-wrap: wrap;
+
+  /*----*/  
+  
+  }
+  
+  #main div {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:70px;
+  }
+  
+  #main2 {
+    min-width:20px;
+    height: 80px;
+    border: 1px solid #c3c3c3;
+    padding: 40px;
+    display: flex;
+  /*Put your code below this line*/
+  flex-direction: column-reverse;
+
+  /*----*/   
+  }
+  
+  #main2 div {
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width:70px;
+  }
+  
+  
+  #box1:hover,
+  #box3:hover,
+  #box4:hover,
+  #box5:hover {
+    background-color: #f8591e;
+    cursor: pointer;
+    color: white;
+  }
+  
+  #box2:hover{
+    background-color: #66c8e8;
+    cursor: pointer;
+    color: white;
+  }
+  
+  #box1, 
+  #box3, 
+  #box4, 
+  #box5 {
+    background-color: #ff7f50; 
+    color: black;
+  }
+  
+  #box2 {
+    background-color: #add8e6; 
+    color: black;
+  }
