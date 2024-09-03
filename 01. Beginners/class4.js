@@ -3,15 +3,30 @@
 =            Section objects           =
 =============================================*/
 
-let name="Ahlam";
-let age = 25;
+//oops
+const person ={
+name:"hello",
+age:25,
+};
+console.log(person.name);
 
-const person = {
-name:name,
-age:age,
+//object oriented programming
+
+const circle = {
+    radius:1,
+    color:"red",
+    location:{
+        x:1,
+        y:2,
+    },
+    isvisble:true,
+draw:function(){
+    console.log("Draw");
+},
 };
 
-console.log(person.age);
+circle.draw;
+
 
 /*=====  End of Section objects  ======*/
 
