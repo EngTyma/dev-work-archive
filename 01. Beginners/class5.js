@@ -1,29 +1,51 @@
-
 /*=============================================
 =            Section Functions           =
 =============================================*/
+//defined
 
-//function declaration
-function work(){
-    console.log('work');
+function greet(){
+    console.log("Hello, World!");
+}
+//called (invoked)
+greet();
+
+//callback function
+function add1(a,b){
+    return a+b;
 }
 
-//function expresssion
-const run = function(){
-    console.log("Run");
+function divide (a,b){
+    return a/b;
+}
+
+function calculate(x,y, operation){
+    return operation(x,y);
+}
+
+console.log(2,2,add1);
+
+console.log(calculate(2,2,divide));
+
+
+// Function declaration
+function work() {
+    console.log('Work');
+}
+
+// Function expression
+const run = function() {
+    console.log('Run');
 };
 run();
 
-// hosting
-// function expression
+// Function expression
 const add = function(a, b) {
     return a + b;
 };
-// function declaration
+
+// Function declaration
 function sub(a, b) {
     return a - b;
-    console.log(5,5);
 }
 
 /*=====  End of Section Functions  ======*/
-
