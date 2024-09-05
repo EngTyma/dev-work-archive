@@ -24,13 +24,10 @@ flex-wrap: nowrap;
 #box1{
     background-color: hsl(0, 100%, 70%);
     align-self: center;
-    /* order: -1; */
-
 }
 
 #box2{
     background-color: hsl(52, 100%, 70%);
-    /* align-self: flex-end; */
 }
 
 #box3{
