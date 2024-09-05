@@ -64,3 +64,13 @@ left: 100px;
     top: 150px;
     left: 150px; */
 }
+
+p:nth-child(even){
+    background-color: skyblue;
+    color: white;
+}
+
+p:nth-child(odd){
+    background-color: tomato;
+    color: white;
+}
