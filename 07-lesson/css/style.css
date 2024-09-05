@@ -47,9 +47,9 @@ flex-wrap: nowrap;
     height: 300px;
     width: 300px;
     background-color: skyblue;
-   position: relative;
-   left: 250px;
-   left: 25px;
+ position: sticky;
+ top: 0;
+ left: 0px;
 }
 
 #boxes2{
