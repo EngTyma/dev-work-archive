@@ -18,8 +18,7 @@ flex-wrap: nowrap;
     height: 150px;
     text-align: center;
     font-size: 8rem;
-    border-radius:15px ;
-
+    border-radius:15px;
 }
 
 #box1{
@@ -78,16 +77,20 @@ p:nth-child(odd){
 p::first-letter{
     font-size: 40px;
     font-style: italic;
-}
-
-p::first-line{
-    color: slategray;
-}
-
-li::before{
-    content: ✔️;
-}
-
-li::before{
-    contain: "✔️";
-}
+   }
+   p::first-line{
+    color: skyblue;
+   }
+   #list1 li::before{
+    content: "✔";
+   }
+   #CSS::after{
+    content: "👈";
+   }
+   li::marker{
+    color: silver;
+   }
+   p::selection{
+    color: white;
+    background: black;
+   }
