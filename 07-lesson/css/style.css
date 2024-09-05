@@ -75,3 +75,19 @@ p:nth-child(odd){
     color: white;
 }
 
+p::first-letter{
+    font-size: 40px;
+    font-style: italic;
+}
+
+p::first-line{
+    color: slategray;
+}
+
+li::before{
+    content: ✔️;
+}
+
+li::before{
+    contain: "✔️";
+}
