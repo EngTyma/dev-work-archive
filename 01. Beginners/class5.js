@@ -1,8 +1,19 @@
 /*=============================================
 =            Section Functions           =
 =============================================*/
-//defined
 
+// function declaration
+function square(num){
+    return num*num;
+}
+console.log(square(4));
+
+//function expression
+const square2 = function(num1){
+    return num1*num1;
+}
+console.log(square(5));
+//defined
 function greet(){
     console.log("Hello, World!");
 }
@@ -22,9 +33,9 @@ function calculate(x,y, operation){
     return operation(x,y);
 }
 
-console.log(2,2,add1);
+console.log(2,2,(add1));
 
-console.log(calculate(2,2,divide));
+console.log(calculate(2,2,(divide)));
 
 
 // Function declaration
