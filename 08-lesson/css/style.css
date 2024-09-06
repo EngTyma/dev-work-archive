@@ -5,5 +5,30 @@
     box-sizing: border-box;
 }
 .flex-container{
+display: flex;
+flex-direction: row;
 
+}
+
+.box{
+    width: 150px;
+height: 150px;
+border: 1PX solid salmon;
+margin-left: 5px;
+}
+
+.box1{
+    background-color: hsl(90, 100%, 70%);
+  
+}
+.box2{
+    background-color: hsl(1, 100%, 70%);
+}
+
+.box3{
+    background-color: hsl(33, 1000%, 70%);
+}
+
+.box4{
+    background-color: hsl(50, 1000%, 70%);
 }
