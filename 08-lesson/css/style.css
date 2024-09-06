@@ -7,6 +7,9 @@
 .flex-container{
 display: flex;
 flex-direction: row;
+justify-content: center;
+height: 500px;
+align-items: center;
 
 }
 
@@ -15,6 +18,7 @@ flex-direction: row;
 height: 150px;
 border: 1PX solid salmon;
 margin-left: 5px;
+
 }
 
 .box1{
