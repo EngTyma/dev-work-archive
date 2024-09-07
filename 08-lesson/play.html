@@ -3,52 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Play with me</title>
+    <title>Flexbox Centering Example</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* Uncomment the line below to see the effect */
+            /* height: 50vh; */
+            border: 2px solid black; /* Just to visualize the container */
+        }
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+        }
+    </style>
 </head>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-color: teal;
-    }
-.coontainer{
-    min-height: 800px;
-   display: flex;
-border: 1px solid;
-justify-content: space-around;
-align-items: center;
-}
-.box{
-  height: 200px;
-  width: 200px;
-  margin-left:5px;
-
-}
-.box1{
-    background-color: hsl(2, 100%, 70%);
-}
-.box2{
-    background-color: hsl(30, 100%, 70%);
-}
-.box3{
-    background-color: hsl(99, 100%, 70%);
-}
-.box4{
-    background-color: hsl(150, 100%, 70%);
-}
-.box5{
-    background-color: hsl(230, 100%, 70%);
-
-}
-</style>
 <body>
-    <div class="coontainer">
-        <div class="box box1">1</div>
-        <div class="box box2">2</div>
-        <div class="box box3">3</div>
-        <div class="box box4">4</div>
-        <div class="box box5">5</div>
+    <div class="container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
     </div>
 </body>
 </html>
