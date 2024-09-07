@@ -6,36 +6,66 @@
     <title>flex box Example</title>
 </head>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    background-color: rgba(26, 27, 38, 0.8);
+    }
 .container{
     display: flex;
     flex-direction: row;
     justify-content: center;
     height: 100vh;
     align-items: center;
+    background-color: rgba(26, 27, 38, 0.8);
 }
+.container .box{
+   margin-left: 10px;
+   padding: 5px 10px;
+   color: white;
+   border-radius: 8px;
+}
+.box h1{
+    text-align: left;
+    font: 1.5rem;
+}
+
+.box p{
+    margin-top: 5px;
+}
+
+.box .btn-primary{
+color: white;
+text-decoration: none;
+border: none;
+padding: 5px 10px;
+margin-top: 5px;
+background-color: dodgerblue;
+}
+
 </style>
 <body>
     <!-- .container>.box.box$*3>h1+p+button.btn-primary[type=submit] -->
 <!-- .container.box.box$*3>h1+p{lorem5}+button.btn-primary[type=submit] -->
-    <div class="container">
-       <div class="box1"> 
+
+
+ <div class="container">
+    <div class="box box1">
         <h1>How To</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas facilis, excepturi culpa tenetur adipisci incidunt.</p>
-<button class="btn-primary">Learn More</button>   
-</div>
-       <div class="box2">
-        <h1>Center</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id inventore libero consectetur mollitia est dolorem.</p>
-        <button class="btn-primary">Learn More</button>   
-
-       </div>
-
-       <div class="box3">
-        <h1>A Div?</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa facere quisquam est, voluptatum voluptatem qui.</p>
-        <button class="btn-primary">Learn More</button>
-       </div>
-
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, dignissimos cumque! Exercitationem cupiditate atque placeat.</p>
+        <button class="btn-primary" type="submit">Learn More</button>
     </div>
+    <div class="box box2">
+        <h1>Center</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus optio voluptates harum illum labore sint!</p>
+        <button class="btn-primary" type="submit">Learn More</button>
+    </div>
+    <div class="box box3">
+        <h1>A Div?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam nihil amet iusto? Vitae, fuga! Qui?</p>
+        <button class="btn-primary" type="submit">Learn More</button>
+    </div>
+</div>
 </body>
 </html>
