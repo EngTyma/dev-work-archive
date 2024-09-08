@@ -60,6 +60,22 @@ li {
     border-radius: 5px;
     cursor: pointer;
 }
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    position: relative; 
+}
+
+h1::after {
+    content: "";
+    display: block;
+    width: 20%; 
+    height: 1px; 
+    background-color: yellowgreen; 
+    margin: 10px auto 0; 
+}
 
 .delivery {
     margin-top: 10px;
