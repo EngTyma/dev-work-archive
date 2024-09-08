@@ -5,7 +5,7 @@
     background-color: teal;
 }
 
-.container ul ,li,a{
+.container .header ,ul ,li,a{
     display: flex;
     flex-direction: row;
     justify-content: end;
@@ -21,4 +21,12 @@ li{
     text-decoration: none;
     padding: 5px 10px;
     color: white;
+    cursor: pointer;
 }
+
+.container ul li a:hover{
+    background-color: #9e28b0c8;
+    border-radius: 5px;
+ padding: 5px 15px;
+}
+
