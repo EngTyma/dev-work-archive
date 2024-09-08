@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: teal;
+}
+
+.container ul ,li,a{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    background-color: #b866c5;
+
+}
+li{
+   list-style-type: none; 
+   padding: 10px;
+}
+
+.container ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+}
