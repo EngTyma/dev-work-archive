@@ -30,5 +30,7 @@ const numbers2 = [1, 2, 3, 4, 5];
 
 // console.log(numbers2.indexOf('a')!== -1);
 console.log(numbers2.includes(1));
+
+console.log(numbers.indexOf(2,4));
 /*=====  End of Section Array  ======*/
 
