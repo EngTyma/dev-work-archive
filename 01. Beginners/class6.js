@@ -32,5 +32,30 @@ const numbers2 = [1, 2, 3, 4, 5];
 console.log(numbers2.includes(1));
 
 console.log(numbers.indexOf(2,4));
+
+
+
+/**
+ *
+ * finding element in an array (reference types)
+ *
+ */
+const courses = [
+    {id:1, name:'HTML'},
+    {id:2, name:'CSS'},
+    {id:3, name:'JS'},
+];
+
+const findarray = courses.includes({id:1, name:"HTML"});
+console.log(findarray);
+
+//callback function
+const course = courses.find(function(course){
+    return course.name === "HTML";
+});
+
+console.log(course);
+
+
 /*=====  End of Section Array  ======*/
 
