@@ -28,6 +28,7 @@ console.log(numbers)
 const numbers2 = [1, 2, 3, 4, 5];
 // console.log(numbers2.indexOf(1));
 
-console.log(numbers2.indexOf('a')!== -1);
+// console.log(numbers2.indexOf('a')!== -1);
+console.log(numbers2.includes(1));
 /*=====  End of Section Array  ======*/
 
