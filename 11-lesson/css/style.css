@@ -1,0 +1,27 @@
+.style1 { 
+    font-family: "Times New Roman", "sans-serif"; 
+    font-weight: bold; 
+    font-size: 30px; 
+    color: #090; 
+    text-align: center; 
+    font-style: normal; 
+    font-variant: normal; 
+} 
+.style2 { 
+    font-family: "sans-serif"; 
+    font-weight: 5px; 
+    font-size: 15px; 
+    color: blueviolet; 
+    text-align: left; 
+    font-style: italic; 
+    font-variant: normal; 
+} 
+.style3 { 
+    font-family: "arial"; 
+    font-weight: 10px; 
+    font-size: 20px; 
+    color: black; 
+    text-align: right; 
+    font-style: oblique; 
+    font-variant: small-caps; 
+} 
