@@ -7,11 +7,40 @@
 
 </head>
 <style>
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container {
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+.container h1{
+    text-align: start;
+}
+.container ul{
+    text-decoration: none;
+    list-style-type: none;
+}
+.container .flex-start h1{
+    align-self: flex-start;
+}
+ li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: white;
+}
 </style>
 <body>
     <div class="container">
-        <h1>Play ground</h1>
+        <div class="container flex-start">
+            <h1>Play ground</h1>
+        </div> 
+
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
