@@ -25,3 +25,8 @@
     font-style: oblique; 
     font-variant: small-caps; 
 } 
+
+p{
+    background-color: darkcyan;
+    color: white;
+}
