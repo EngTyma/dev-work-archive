@@ -3,5 +3,13 @@ h1 {
 }
 
 h2 {
-    color: rgb(255, 99, 0);
+    color: rgba(255, 98, 0, 0.463);
+}
+
+h3 {
+    color: #5F9EA0;
+}
+
+h4 {
+    color: hsl(0, 100%, 50%);
 }
