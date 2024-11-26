@@ -1,5 +1,11 @@
+section {
+    width: 500px;
+    height: 500px;
+    background-color: teal;
+}
+
 div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
+    width: 30%;
+    height: 20%;
+    background-color: #483D8B;
 }
