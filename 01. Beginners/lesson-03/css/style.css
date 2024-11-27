@@ -2,3 +2,18 @@ h1 {
     font-family: Times New Roman;
     color: red;
 }
+
+.p1 {
+    font-family: Times New Roman;
+    color: red;
+}
+
+.p2 {
+    font-family: Arial;
+    color: blue;
+}
+
+.p3 {
+    font-family: Lucida Console;
+    color: green;
+}
