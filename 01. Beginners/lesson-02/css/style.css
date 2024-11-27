@@ -33,5 +33,6 @@ p {
 
 .re-uni p {
     color: #fff;
+    padding: 10px;
     font-size: 2em;
 }
