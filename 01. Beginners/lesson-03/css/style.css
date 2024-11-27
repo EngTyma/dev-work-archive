@@ -11,6 +11,19 @@ h2 {
     line-height: 1.5;
 }
 
+a {
+    text-decoration: none;
+    color: #CD5C5C;
+}
+
+a:hover {
+    color: #FF0000;
+}
+
+a:visited {
+    color: #FFE4E1;
+}
+
 .p1 {
     font-family: Times New Roman;
     color: red;
