@@ -5,6 +5,9 @@ h1 {
 
 h2 {
     font-family: monospace;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #6495ED;
 }
 
 .p1 {
