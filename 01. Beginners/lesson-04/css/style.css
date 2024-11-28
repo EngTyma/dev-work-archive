@@ -1,1 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Protest+Revolution&display=swap');
+.protest-revolution-regular {
+    font-family: "Protest Revolution", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
