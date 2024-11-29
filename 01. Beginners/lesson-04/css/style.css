@@ -9,8 +9,9 @@
 /* CSS Box Model In Depth */
 
 div {
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
     background-color: #008B8B;
     border: 2px solid #2F4F4F;
+    padding: 10px;
 }
