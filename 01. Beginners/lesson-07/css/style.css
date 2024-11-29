@@ -1,9 +1,24 @@
 /* CSS Advance Selectors */
 
+* {
+    border: 1px solid red;
+}
+
 .one {
     background-color: #f0f0f0;
     padding: 10px;
     margin: 10px;
     border: 1px solid #000;
     color: #000;
+}
+
+.two {
+    font-size: 4rem;
+}
+
+#id {
+    color: #f00;
+    text-align: right;
+    padding: 10px;
+    margin: 1px;
 }
