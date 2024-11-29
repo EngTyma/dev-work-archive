@@ -4,3 +4,13 @@
     font-weight: 400;
     font-style: normal;
 }
+
+
+/* CSS Box Model In Depth */
+
+div {
+    width: 100px;
+    height: 100px;
+    background-color: #008B8B;
+    border: 2px solid #2F4F4F;
+}
