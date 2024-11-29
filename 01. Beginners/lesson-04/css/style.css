@@ -34,6 +34,12 @@ div {
     line-height: 1.5;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    background-image: url('https://plus.unsplash.com/premium_photo-1667853664366-6e3388082545?q=80&w=881&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Ds');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    /* background: url("https://media.istockphoto.com/id/1459952195/photo/beautiful-spring-garden-with-flowers-and-lawn-grass-3d-illustration.jpg?s=612x612&w=is&k=20&c=23BuPgB0Wupfc3n9h5QEK9FQB_g_mlWiivtW_SMwA_o=") no-repeat bottom / cover; */
 }
 
 div:hover {
