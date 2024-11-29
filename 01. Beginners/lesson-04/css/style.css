@@ -14,9 +14,9 @@ div {
     /* background-color: #008B8B; */
     /* border: 2px solid #2F4F4F; */
     border-left: 3px solid #008B8B;
-    border-right: 3px solid #008B8B;
-    border-top: 3px solid #008B8B;
-    border-bottom: 3px solid #008B8B;
+    border-right: 3px solid #9400D3;
+    border-top: 3px solid #BDB76B;
+    border-bottom: 3px solid #FF1493;
     margin: 10px;
     /* space between the border and the content */
     padding: 10px;
@@ -29,6 +29,10 @@ div {
 div:hover {
     background-color: #008B8B;
     color: #FFFFFF;
+    border-right: 3px solid #9932CC;
+    border-bottom: 3px solid #008000;
+    border-left: 3px solid #FF69B4;
+    border-top: 3px solid #CD5C5C;
 }
 
 div:active {
@@ -36,11 +40,12 @@ div:active {
     color: #FFFFFF;
 }
 
-.box {
+
+/* .box {
     width: 100px;
     height: 100px;
     background-color: #008B8B;
     border: 2px solid #2F4F4F;
     margin: 10px;
     padding: 10px;
-}
+} */
