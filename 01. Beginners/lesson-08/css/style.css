@@ -1,1 +1,13 @@
 /* CSS Pseudo Selectors */
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: green;
+}
