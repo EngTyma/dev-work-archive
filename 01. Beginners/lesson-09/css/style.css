@@ -10,5 +10,9 @@ span {
     background-color: crimson;
     /* width: 100px;
     height: 100px; */
-    display: block;
+    display: inline-block;
+}
+
+.none {
+    display: none;
 }
