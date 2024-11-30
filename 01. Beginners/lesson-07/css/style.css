@@ -1,8 +1,9 @@
 /* CSS Advance Selectors */
 
-* {
+
+/* * {
     border: 1px solid red;
-}
+} */
 
 .one {
     background-color: #f0f0f0;
@@ -25,4 +26,14 @@
 
 div.intro {
     color: blue;
+}
+
+a[href="home"] {
+    color: green;
+    margin: 10px;
+    padding: 10px;
+}
+
+img[alt="fjords"] {
+    width: 100px;
 }
