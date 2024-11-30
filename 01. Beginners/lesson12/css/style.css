@@ -15,4 +15,6 @@
     left: 100px;
     top: 100px;
     background-color: inherit;
+    width: inherit;
+    height: inherit;
 }
