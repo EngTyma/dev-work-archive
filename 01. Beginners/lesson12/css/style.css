@@ -1,0 +1,16 @@
+/* CSS Inheritance In Depth */
+
+.parent {
+    color: rgb(217, 26, 217);
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    font-weight: italic;
+    width: 100px;
+    height: 100px;
+    background-color: crimson;
+}
+
+.children {
+    position: relative;
+    left: 100px;
+}
