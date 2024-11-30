@@ -1,0 +1,6 @@
+/* Text Shadow and Box Shadow In CSS */
+
+h1 {
+    text-shadow: 2px 2px 2px #000;
+    box-shadow: 2px 2px 2px #000;
+}
