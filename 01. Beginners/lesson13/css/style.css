@@ -28,4 +28,7 @@
     background-color: teal;
     width: 100px;
     height: 100px;
+    position: fixed;
+    /* top: 200px; */
+    left: 200px;
 }
