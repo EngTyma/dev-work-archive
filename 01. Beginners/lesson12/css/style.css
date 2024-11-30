@@ -7,11 +7,12 @@
     font-weight: italic;
     width: 100px;
     height: 100px;
-    background-color: crimson;
+    background-color: rgb(234, 65, 99);
 }
 
 .children {
     position: relative;
     left: 100px;
     top: 100px;
+    background-color: inherit;
 }
