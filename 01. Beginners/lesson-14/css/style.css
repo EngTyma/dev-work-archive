@@ -19,6 +19,7 @@ body {
     /* flex-wrap: wrap; */
     /* justify-content: space-around; */
     /* justify-content: flex-end; */
+    align-items: end;
 }
 
 .container .box {
