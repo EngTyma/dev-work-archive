@@ -21,7 +21,48 @@ body {
     width: 50px;
     height: 50px;
     color: white;
-    background-color: crimson;
     text-align: center;
     margin: 5px;
+}
+
+.container .box1 {
+    background-color: crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box2 {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box3 {
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box4 {
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box5 {
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box6 {
+    background-color: purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
