@@ -1,1 +1,24 @@
 /* Master CSS Grid */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: rgb(34, 34, 34);
+    height: 100vh;
+    padding: 20px;
+    /* grid stuff here */
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+}
+
+.s {
+    padding: 20px;
+    background: rgb(84, 84, 84);
+    text-align: center;
+    color: #fff;
+    /* margin: 10px; */
+}
