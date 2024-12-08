@@ -24,3 +24,13 @@
     color: #fff;
     /* margin: 10px; */
 }
+
+header {
+    /* grid-column: 1 / 4; */
+    grid-row: 1/2;
+}
+
+aside {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
