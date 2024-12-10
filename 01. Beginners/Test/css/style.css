@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background: rgb(34, 34, 34);
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-gr {
+    padding: 20px;
+    background: rgb(84, 84, 84);
+    text-align: center;
+    color: #fff;
+}
+
+
+/* spanning */
+
+header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+
+nav {
+    grid-row: 2/4;
+}
+
+nav ul,
+li,
+a {
+    cursor: pointer;
+    list-style: none;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover,
+a:hover {
+    background-color: rgb(249, 25, 25);
+}
+
+aside {
+    grid-column: 3/4;
+}
+
+main {
+    grid-column: 2/4;
+}
+
+footer {
+    grid-column: 1/4;
+}
