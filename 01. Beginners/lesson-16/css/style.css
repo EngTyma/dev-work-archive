@@ -6,7 +6,7 @@
 
 .container {
     background: rgb(34, 34, 34);
-    padding: 10px;
+    padding: 20px;
     height: 100vh;
     /* grid staff here */
     display: grid;
@@ -23,4 +23,18 @@
     text-align: center;
     color: white;
     /* margin: 10px; */
+}
+
+
+/* spanning the grid */
+
+header {
+    grid-column: 1 / 4;
+    /* grid-column-start: 1;
+    grid-column-end: 4; */
+}
+
+aside {
+    grid-column-start: 1;
+    grid-column-end: 4;
 }
