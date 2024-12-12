@@ -11,7 +11,7 @@
 }
 
 .container .img {
-    background-image: url('https://i.pinimg.com/474x/bb/24/71/bb24711cc8921c2986c9e5193ef40830.jpg'), url('https://i.pinimg.com/474x/7d/da/e1/7ddae13eeef45a1dab42d7ceb8dced02.jpg');
+    background-image: url('https://i.pinimg.com/474x/bb/24/71/bb24711cc8921c2986c9e5193ef40830.jpg'), url('https://i.pinimg.com/474x/7d/da/e1/7ddae13eeef45a1dab42d7ceb8dced02.jpg') linear-gradient(stealblue, steelblue);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
