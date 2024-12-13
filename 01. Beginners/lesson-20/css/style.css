@@ -1,1 +1,19 @@
 /* CSS Before and After */
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: rgb(34, 34, 34);
+    color: #fff;
+    font-size: 4rem;
+}
+
+p::before {
+    content: "hello everyone ";
+}
+
+p::after {
+    content: " and goodbye";
+}
