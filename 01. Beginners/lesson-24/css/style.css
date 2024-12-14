@@ -28,4 +28,13 @@
     transform: rotate(90deg);
     /* transform: scale(0.5); */
     transform: skew(45deg);
+    /* transition: transform 1s; */
+    transition: all 1s;
+}
+
+.container>div:hover {
+    background-color: var(--color-tertiary);
+    transform: rotate(0deg);
+    /* transform: scale(1); */
+    transform: skew(0deg);
 }
