@@ -31,3 +31,7 @@ body {
     color: var(--color-white);
     cursor: pointer;
 }
+
+.btn-secondary {
+    background-color: var(--color-fourth);
+}
