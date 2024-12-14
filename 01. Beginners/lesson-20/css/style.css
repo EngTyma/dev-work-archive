@@ -12,8 +12,14 @@ body {
 
 p::before {
     content: "hello everyone ";
+    background-color: green;
+    color: white;
+    font-size: 16px;
 }
 
 p::after {
     content: " and goodbye";
+    background-color: crimson;
+    color: white;
+    font-size: 8px;
 }
