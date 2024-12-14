@@ -5,6 +5,7 @@
     --color-secondary: #1E90FF;
     --color-tertiary: #FF4136;
     --color-white: #fff;
+    --color-black: rgb(4, 4, 4);
     --color-fourth: #4B0082;
     --color-IndianRed: #CD5C5C;
     --color-lightpink: #FFB6C1;
@@ -28,4 +29,5 @@ body {
     background: var(--color-secondary);
     padding: 1em 2em;
     color: var(--color-white);
+    cursor: pointer;
 }
