@@ -8,6 +8,7 @@
     --color-IndianRed: #CD5C5C;
     --color-lightpink: #FFB6C1;
     --color-LightSeaGreen: #20B2AA;
+    --color-white: #fff;
     --color-bg: #333;
     --font-size: 1.5rem;
 }
@@ -37,4 +38,31 @@
     transform: rotate(0deg);
     /* transform: scale(1); */
     transform: skew(0deg);
+}
+
+.click-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.click-me .btn-click {
+    background-color: transparent;
+    /*transition*/
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    transform: translate(-100px, -100px);
+    transform: skew(30deg);
+}
+
+.click-me .btn-click:hover {
+    background-color: var(--color-secondary);
+    transform: skew(0deg);
+    transform: all 1sec;
+    color: var(--color-white);
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 5px;
 }
