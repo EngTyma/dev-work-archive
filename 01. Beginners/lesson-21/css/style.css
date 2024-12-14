@@ -10,3 +10,7 @@ body {
     background-color: rgb(32, 32, 32);
     padding: 4rem;
 }
+
+.section .article-title :not(.content) {
+    color: #6495ED;
+}
