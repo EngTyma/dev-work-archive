@@ -1,1 +1,31 @@
 /* CSS Transformation | Transitions and Animations In Depth */
+
+:root {
+    --color-primary: #2F4F4F;
+    --color-secondary: #1E90FF;
+    --color-tertiary: #FF4136;
+    --color-fourth: #4B0082;
+    --color-IndianRed: #CD5C5C;
+    --color-lightpink: #FFB6C1;
+    --color-LightSeaGreen: #20B2AA;
+    --color-bg: #333;
+    --font-size: 1.5rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container>div {
+    width: 300px;
+    height: 300px;
+    background-color: var(--color-LightSeaGreen);
+    /*transform: translate(-100px, -100px);
+    */
+    transform: rotate(90deg);
+    /* transform: scale(0.5); */
+    transform: skew(45deg);
+}
