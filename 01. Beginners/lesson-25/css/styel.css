@@ -1,1 +1,26 @@
     /*     CSS Media Queries*/
+    
+     :root {
+        --color-primary: #2F4F4F;
+        --color-secondary: #1E90FF;
+        --color-tertiary: #FF4136;
+        --color-fourth: #4B0082;
+        --color-IndianRed: #CD5C5C;
+        --color-lightpink: #FFB6C1;
+        --color-white: #fff;
+        --color-LightSeaGreen: #20B2AA;
+        --color-bg: #333;
+        --font-size: 1.5rem;
+        --font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        background-color: var(--color-IndianRed);
+    }
+    
+    @media screen and (max-width:1000px) {
+        body {
+            background-color: var(--color-secondary);
+            color: var(--color-white);
+        }
+    }
