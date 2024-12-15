@@ -118,7 +118,8 @@ li a:hover {
 .img {
     width: 400px;
     height: 400px;
-    background: url('https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background: url('https://media.istockphoto.com/id/1077693980/photo/hot-coffee-latte-cappuccino-spiral-foam-on-wooden-table-in-coffee-shop-cafe-with-vintage.jpg?s=612x612&w=0&k=20&c=BzCOjBayQVVtIaXfTNXx8J-OUXXApN5aToA8ya_0DLU=');
+    /* background: url('https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
     background-position: center;
     background-size: cover;
 }
