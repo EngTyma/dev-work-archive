@@ -4,6 +4,7 @@
 :root {
     --main-color: #deab5f;
     --primary-color: #312e2e;
+    --secondry-color: #100e0f;
 }
 
 
@@ -26,7 +27,7 @@ button {
 }
 
 body {
-    background-color: #100e0f;
+    background-color: var(--secondry-color);
 }
 
 nav {
@@ -39,7 +40,7 @@ nav {
 }
 
 li {
-    display: inline-block;
+    display: inline;
     list-style: none;
 }
 
@@ -61,7 +62,8 @@ li a:hover {
 /* header styles */
 
 .header {
-    background: url(../images/coffee.jpg);
+    /* background: url(../images/coffee.jpg); */
+    background: url('https://salonnierescoffee.com/cdn/shop/files/pexels-natri-129207.jpg?v=1727645544&width=990');
     /* background: url('https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'); */
     background-position: center;
     background-size: cover;
@@ -74,11 +76,11 @@ li a:hover {
     justify-content: center;
     align-items: center;
     color: #fff;
-    position: relative;
     text-align: center;
+    position: relative;
 }
 
-.main-heading {
+.main-headings {
     position: absolute;
     top: 7rem;
     font-size: 4rem;
@@ -97,7 +99,7 @@ li a:hover {
     position: absolute;
     bottom: 2rem;
     padding: 10px 30px;
-    margin-bottom: 20px;
+    margin-top: 20px;
     background: transparent;
     background: var(--main-color);
     transform: translateY(60px);
@@ -107,7 +109,7 @@ li a:hover {
 /* our story section */
 
 #our-story {
-    /* height: 100vh; */
+    height: 100vh;
     margin-top: 15%;
     display: flex;
     flex-wrap: wrap;
@@ -140,11 +142,11 @@ li a:hover {
     width: 100px;
     height: 2px;
     background-color: #fff;
-    transform: translateY(-120px);
+    transform: translateX(-120px);
 }
 
 .section-content p {
-    width: 500px;
+    max-width: 500px;
     color: #fff;
     font-family: sans-serif;
     line-height: 20px;
