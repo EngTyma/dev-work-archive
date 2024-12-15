@@ -97,10 +97,14 @@ li a:hover {
     position: absolute;
     bottom: 2rem;
     padding: 10px 30px;
+    margin-bottom: 20px;
     background: transparent;
     background: var(--main-color);
     transform: translateY(60px);
 }
+
+
+/* our story section */
 
 #our-story {
     /* height: 100vh; */
@@ -135,7 +139,7 @@ li a:hover {
     width: 100px;
     height: 2px;
     background-color: #fff;
-    transform: translateY(120px);
+    transform: translateY(-120px);
 }
 
 .section-content p {
@@ -147,12 +151,4 @@ li a:hover {
 }
 
 
-/* header end */
-
-
-/* footer styles */
-
-footer {
-    background-color: var(--primary-color);
-    color: #fff;
-}
+/* our story section end */
