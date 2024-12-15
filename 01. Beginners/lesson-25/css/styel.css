@@ -18,16 +18,20 @@
         background-color: var(--color-IndianRed);
     }
     
-    h1 {
+    .container {
         display: flex;
         justify-content: center;
         align-items: center;
         height: 100vh;
+    }
+    
+    .container h1 {
         transform: skew(45deg);
         transition-duration: 1s;
         transition-timing-function: ease-in-out;
         transform: skew(30deg);
         transition: all 1s;
+        border: 1px solid var(--color-white);
     }
     
     h1:hover {
@@ -38,7 +42,7 @@
         body {
             background-color: var(--color-secondary);
             color: var(--color-white);
-            border: 1px solid var(--color-white);
+            /* border: 1px solid var(--color-white); */
             padding: 1rem 2rem;
         }
     }
