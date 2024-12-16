@@ -1,0 +1,140 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Section</title>
+</head>
+<style>
+     :root {
+        --color-primary: #696969;
+        --color-secondary: #007acc;
+        --color-main: #EEE8AA;
+        --color-RebeccaPurple: #663399;
+        --color-tertiary: #8FBC8F;
+        --color-text: #708090;
+        --color-text: #fff;
+        --color-bg: #000;
+        --spacing: 20px;
+        --border-radius: 50%;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    nav {
+        background: var(--color-primary);
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 2rem;
+        color: white;
+    }
+    
+    li {
+        list-style: none;
+        margin: 0 1rem;
+        display: inline;
+    }
+    
+    li a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    a:hover {
+        padding-bottom: 3px;
+        border-bottom: 2px solid var(--color-main);
+    }
+    
+    #content-section {
+        background: url(/IMG/back.jpg) no-repeat center center;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 100vh;
+    }
+    
+    #content-section .content {
+        display: block;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        height: 100vh;
+        padding: var(--spacing);
+        position: absolute;
+        top: 40%;
+    }
+    
+    h1 {
+        color: white;
+    }
+    
+    p {
+        color: var(--color-text);
+        margin: 10px;
+        font-size: 1.5rem;
+        flex-wrap: wrap;
+    }
+    
+    .btn-primary {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #007acc;
+        color: white;
+        border: none;
+    }
+    
+    footer {
+        background-color: var(--color-secondary);
+        padding: 20px;
+        text-align: center;
+        position: sticky;
+        bottom: 0;
+    }
+    
+    .About {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 100vh;
+    }
+</style>
+
+<body>
+    <!-- nav -->
+    <nav>
+        <div class="brand">MyBrand</div>
+        <ul>
+            <li><a href="#content-section">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="content-section">
+        <div class="content">
+            <h1>Welcome To My Website</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum unde provident iste eius ipsum nesciunt omnis, architecto blanditiis amet, ipsa animi velit laudantium voluptatem quod ducimus aspernatur magnam ullam inventore.</p>
+            <button class="btn-primary">Get Started</button>
+
+        </div>
+    </section>
+    <section id="About">
+        <div class="about-content">
+            <div class="about-profile">
+                <img src="https://i.pinimg.com/474x/6d/f5/3d/6df53d7e6b65c3d01809345f0e0c09f9.jpg" alt="About Me Profile Picture">
+            </div>
+            <div class="about-text">
+                <p class="about-text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, voluptatibus, quisquam, quos...</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>Copyright &copy; 2022 MyBrand</p>
+    </footer>
+</body>
+
+</html>

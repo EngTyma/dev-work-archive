@@ -98,3 +98,51 @@ nav a:hover {
 .content img:hover {
     transform: scale(1.1);
 }
+
+
+/* about */
+
+.about {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.about-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.about-profile {
+    flex: 1;
+}
+
+.about-profile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-text {
+    flex: 2;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.line {
+    display: block;
+    margin: 20px auto 0;
+    width: 80%;
+    height: 2px;
+    background-color: #ddd;
+}
