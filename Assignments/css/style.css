@@ -21,6 +21,7 @@ nav {
     grid-column: 1/2;
     background-color: dodgerblue;
     height: 100vh;
+    width: 50%;
 }
 
 nav li {
@@ -47,7 +48,7 @@ nav li a:hover {
     grid-column: 2/5;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-top: 50px;
 }
 
