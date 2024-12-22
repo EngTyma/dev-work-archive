@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blog</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        p.subtitle {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        
+        .blog-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: calc(33% - 20px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .blog-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .blog-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        
+        .blog-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .blog-card a {
+            text-decoration: none;
+            color: #3498db;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        .blog-card a:hover {
+            color: #2980b9;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Our Blog</h1>
+    <p class="subtitle">Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
+
+    <div class="blog-container">
+        <div class="blog-card">
+            <img src="https://images.pexels.com/photos/1766838/pexels-photo-1766838.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Watering Plants">
+            <h2>Innovations for a Greener Future</h2>
+            <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.pexels.com/photos/414061/pexels-photo-414061.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Analytics Work">
+            <h2>The Power of Agricultural Analytics</h2>
+            <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
+            <a href="#">Read More</a>
+        </div>
+
+        <div class="blog-card">
+            <img src="https://images.pexels.com/photos/884788/pexels-photo-884788.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Farming Tractor">
+            <h2>Cultivating Sustainable and Resilient Farms</h2>
+            <p>Li Europan lingues es membres del sam familie. Lor separat existentie es un myth.</p>
+            <a href="#">Read More</a>
+        </div>
+    </div>
+</body>
+
+</html>
