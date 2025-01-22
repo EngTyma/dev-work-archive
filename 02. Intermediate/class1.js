@@ -5,6 +5,9 @@
 let nme = "Taslima";
 console.log(nme);
 
+var ages = 23;
+console.log(ages);
+
 console.log('Hello, world!');
 
 // second example
