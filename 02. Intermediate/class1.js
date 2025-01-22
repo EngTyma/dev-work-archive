@@ -95,6 +95,21 @@ console.log(person.name);
 
 /*=====  End of lesson4  ======*/
 
+
+/*=============================================
+=            Array Section            =
+=============================================*/
+
+let selectedColors = ['red', 'black', 'yellow', 'tomato'];
+selectedColors[1] = 'blue';
+// console.log(selectedColors[0]);
+console.log(selectedColors.length);
+
+
+/*=====  End of Section of Array  ======*/
+
+
+
 /*=============================================
 =            JavaScript Objects Assignment        =
 =============================================*/
