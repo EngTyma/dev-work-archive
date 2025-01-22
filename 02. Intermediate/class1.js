@@ -162,17 +162,10 @@ console.log(selectedcolor.length);
 =============================================*/
 
 // function expression performing task
-function greet(name, lname) {
-    console.log("hello " + name, "", +lname);
+function great() {
+    console.log("Hello world!");
 }
-greet("Anhal", "Ahmed");
 
-//calculating function
-function square(number) {
-    return number * number;
-}
-// let calculate = square(2);
-
-console.log(square(2));
+great();
 
 /*=====  End of lesson6  ======*/
