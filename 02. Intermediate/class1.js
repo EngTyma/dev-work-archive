@@ -1,7 +1,17 @@
 /*=============================================
 =            lesson1 Variables            =
 =============================================*/
-//   first example
+//first example
+// How to create variables:
+var x;
+let c;
+
+// how to use variables:
+x = 5;
+c = 6;
+let d = x + c;
+console.log(d);
+
 let nme = "Taslima";
 console.log(nme);
 
@@ -51,46 +61,38 @@ console.log(i);
 =            lesson 3 primitive datatypes        =
 =============================================*/
 
-let j = "ibtisam"; //string literal
-let k = 25; //number literal
-let check = true; //boolean literal
-// let num; //
-let num = undefined; //undefined literal
+let fname = "Intisar";
+let yrAge = 23;
+let isActive = true;
 
-let color = null; //nul literal
+let FirstName = undefined;
+let color = null;
+
+// Dynamic Type
+
+
 
 /*=====  End of lesson3  ======*/
 
 /*=============================================
 =            lesson 4 objects        =
 =============================================*/
-let names = "Taslima";
-let age1 = 25;
 
 let person = {
-    name: names,
-    age: age1,
+    name: "Intisar",
+    age: 23,
+    isActive: true
 };
+// dot notation
+person.name = "Anhar";
 console.log(person.name);
 
-//dot notation
+// bracket notation
+person["name"] = "Taslima";
 
 console.log(person.name);
 
-//bracket notation
 
-console.log(person["name"]);
-
-const student = {
-    id: 1,
-    name: "ibtihal",
-};
-
-//dot notation
-console.log(student.id);
-
-//bracket notation
-console.log(student["name"]);
 /*=====  End of lesson4  ======*/
 
 /*=============================================
