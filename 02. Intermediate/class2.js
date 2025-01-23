@@ -32,6 +32,7 @@ console.log(x);
  * Assignment Operator
  *
  */
+
 console.log("Hello, world!");
 let dh = 10;
 // dh++;
@@ -54,6 +55,12 @@ console.log(a);
  * Comparison Operators
  *
  */
+console.log("Show!");
+let var1 = '3';
+let var2 = 5;
+// equal == not eaqual != strict equal === not strict equal !== greater than > greater than or equal to >== less than < less than or equal to <= 
+
+console.log(3 !== var1);
 
 let c = 1;
 // relational oper...
