@@ -2,43 +2,52 @@
 =            Section objects           =
 =============================================*/
 
+const man = {
+    name: "John",
+    age: 25,
+    job: "Developer",
+    hobby: "Programming",
+};
+
+console.log(man.name + " " + man.age + " " + man.job + " " + man.hobby);
+
+
 //oops
-const person ={
-name:"hello",
-age:25,
+const person = {
+    name: "hello",
+    age: 25,
 };
 // console.log(person.name);
 
 //object oriented programming
 
 const circle = {
-    radius:1,
-    color:"red",
-    location:{
-        x:1,
-        y:2,
+    radius: 1,
+    color: "red",
+    location: {
+        x: 1,
+        y: 2,
     },
-    isvisble:true,
-draw:function(){
-    console.log("Draw");
-},
+    isvisble: true,
+    draw: function() {
+        console.log("Draw");
+    },
 };
 // circle.draw;
 
 //factory fuction
 
-function createCircle(radius,location){
-    return circle = {
-        radius:radius,
+// function createCircle(radius, location) {
+//     return circle = {
+//         radius: radius,
 
-        draw(){
-            console.log("Draw");
-        },
-    };
-}
+//         draw() {
+//             console.log("Draw");
+//         },
+//     };
+// }
 
-const circl1 = createCircle(1);
-console.log(circl1);
+// const circl1 = createCircle(1);
+// console.log(circl1);
 
 /*=====  End of Section objects  ======*/
-

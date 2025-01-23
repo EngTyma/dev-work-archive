@@ -104,7 +104,7 @@ switch (day) {
 
 let role = 'admin'; // Added initialization for `role` variable
 switch (role) {
-    case 'admin':
+    case '0':
         console.log('Admin');
         break;
     case 'moderator':
@@ -131,6 +131,11 @@ if (role === 'admin') {
  * Loops
  *
  */
+// start point , end, increment
+for (let j = 1; j <= 100; j++) {
+    console.log(j);
+}
+
 
 // For loop
 // for (let i = 0; i < 5; i++) {
@@ -153,5 +158,27 @@ if (role === 'admin') {
 //     console.log(j);
 //     j++;
 // }
+
+
+
+/**
+ *
+ * Do While
+ *
+ */
+
+let k = 0;
+do {
+    k += 6;
+    console.log(k);
+}
+
+while (k < 5);
+
+let n = 0;
+while (n < 5) {
+    n++;
+    console.log(n);
+}
 
 /*=====  End of Section control flow  ======*/
