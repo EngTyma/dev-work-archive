@@ -11,6 +11,22 @@ const man = {
 
 console.log(man.name + " " + man.age + " " + man.job + " " + man.hobby);
 
+const man1 = {
+    name: "hamda",
+    age: 25,
+    job: "Developer",
+    hobby: "Programming",
+};
+
+console.log(man1.name + " " + man1.age + " " + man1.job + " " + man1.hobby);
+
+const man2 = {
+    name: "Intisar",
+    age: 23,
+    job: "Developer",
+    hobby: "Programming",
+};
+console.log(man2.name + " ", man2.age + " ", man2.job + " ", man2.hobby);
 
 //oops
 const person = {
