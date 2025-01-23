@@ -1,4 +1,3 @@
-
 /*=============================================
 =            Section Operators            =
 =============================================*/
@@ -6,15 +5,17 @@
 
 /* Arithmetic Operators */
 
-
+let ab = 10;
+let cd = 5;
+console.log(ab + cd);
 
 // Addition Operator
 let x = 10;
 let y = 5;
-console.log(x+y);
+console.log(x + y);
 
 // Multiplication Operator
-console.log(x*y);
+console.log(x * y);
 
 //increment Operator
 console.log(x++);
@@ -25,13 +26,26 @@ console.log(x--);
 console.log(x);
 
 
-// Assignment Operator
+
+/**
+ *
+ * Assignment Operator
+ *
+ */
+console.log("Hello, world!");
+let dh = 10;
+// dh++;
+dh = dh + 1;
+dh += 1;
+console.log(dh);
+
+
 let a = 5;
 let b = 9;
-let z = a+b;
-a=a+b;
-a *=a;
-a -=a;
+let z = a + b;
+a = a + b;
+a *= a;
+a -= a;
 console.log(a);
 
 
@@ -43,18 +57,18 @@ console.log(a);
 
 let c = 1;
 // relational oper...
-console.log(c>4);
-console.log(c>=1);
-console.log(c<=4);
+console.log(c > 4);
+console.log(c >= 1);
+console.log(c <= 4);
 
 //equality oper...
 //strinct oper...(same type and value)
-console.log(c==1);
+console.log(c == 1);
 
 
 //lost euqlity..
 
-console.log(c===1);
+console.log(c === 1);
 
 
 /**
@@ -80,13 +94,13 @@ console.log(type1);
 let a1 = 10;
 let b1 = 20;
 // true && true
-console.log(a1>5 && b1>5);
+console.log(a1 > 5 && b1 > 5);
 // false && true
-console.log(a1<5 && b1>5);
+console.log(a1 < 5 && b1 > 5);
 // true && false
-console.log(a1>5 && b1<5);
+console.log(a1 > 5 && b1 < 5);
 // false && false
-console.log(a1<5 && b1<5);
+console.log(a1 < 5 && b1 < 5);
 
 
 
@@ -101,9 +115,8 @@ console.log(eligibleforloan);
 let a2 = 10;
 let b2 = 20;
 // true
-console.log(!a2>5);
+console.log(!a2 > 5);
 // false
-console.log(!a2<5);
+console.log(!a2 < 5);
 
 /*=====  End of Section operators  ======*/
-
