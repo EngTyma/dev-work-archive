@@ -134,4 +134,47 @@ console.log(!a2 > 5);
 // false
 console.log(!a2 < 5);
 
+
+
+/**
+ *
+ * bitwise operator
+ *
+ */
+
+// bitwise AND(&)
+let a3 = 10;
+let b3 = 20;
+console.log(a3 & b3);
+// bitwise OR(|)
+let a4 = 10;
+let b4 = 20;
+console.log(a4 | b4);
+// bitwise XOR(^)
+let a5 = 10;
+let b5 = 20;
+console.log(a5 ^ b5);
+// bitwise NOT(~)
+let a6 = 10;
+console.log(~a6);
+
+
+/**
+ *
+ * Operator Precedence
+ *
+ */
+
+let xy = 2 + 4 * 3;
+console.log(xy);
+let z = 2 + 4 * 3;
+console.log(z);
+let a7 = 2 + 4 * 3;
+console.log(a7);
+let b7 = 2 + 4 * 3;
+console.log(b7);
+
+
+
+
 /*=====  End of Section operators  ======*/
