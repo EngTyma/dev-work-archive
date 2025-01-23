@@ -40,6 +40,9 @@ dh = dh + 1;
 dh += 1;
 console.log(dh);
 
+let mod = 5 % 5;
+console.log(mod);
+
 
 let a = 5;
 let b = 9;
@@ -97,7 +100,7 @@ console.log(type1);
  *
  */
 
-// AND(&&)
+// AND(&&) t/t = t , t/f = f
 let a1 = 10;
 let b1 = 20;
 // true && true
@@ -109,9 +112,14 @@ console.log(a1 > 5 && b1 < 5);
 // false && false
 console.log(a1 < 5 && b1 < 5);
 
+let xam = 4 && 5;
+let yam = 5;
 
+// true && true
 
-// OR(||)
+console.log(xam);
+
+// OR(||) t/f = t f/t = f 
 let highIncome = true;
 let goodcreditscore = true;
 let eligibleforloan = highIncome || goodcreditscore;
