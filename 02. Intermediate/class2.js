@@ -167,14 +167,29 @@ console.log(~a6);
 
 let xy = 2 + 4 * 3;
 console.log(xy);
-let z = 2 + 4 * 3;
+let zy = 2 + 4 * 3;
 console.log(z);
 let a7 = 2 + 4 * 3;
 console.log(a7);
 let b7 = 2 + 4 * 3;
 console.log(b7);
 
+// Bodmas 
 
+
+
+/**
+ *
+ * Exercise 1
+ *
+ */
+
+let ex = "REd";
+let ex1 = "Blue";
+let ex4 = ex;
+ex4 = ex1;
+console.log(ex);
+console.log(ex1);
 
 
 /*=====  End of Section operators  ======*/

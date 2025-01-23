@@ -9,7 +9,14 @@
  *
  */
 
-
+let car = 80;
+if (car > 100) {
+    console.log("car is Too Much Expensive");
+} else if (car > 90) {
+    console.log("car is expensive");
+} else {
+    console.log("car is cheap");
+}
 /**
  *
  * Hour app:
@@ -51,6 +58,20 @@ console.log(getGreeting());
  * switch statements
  *
  */
+
+const expr = 'apple';
+switch (expr) {
+    case 'apple':
+        console.log('It is an apple');
+        break;
+    case 'banana':
+        console.log('It is a banana');
+        break;
+    default:
+        console.log('It is neither an apple nor a banana');
+        break;
+
+}
 
 let day = 0;
 switch (day) {
@@ -116,20 +137,20 @@ if (role === 'admin') {
 // }
 
 //for loop
-for (let i =0;i<=5;i++){
-    if (i%=2 !==0)
-        console.log(i);
-    else{
-        console.log("Hello World");
+// for (let i = 0; i <= 5; i++) {
+//     if (i %= 2 !== 0)
+//         console.log(i);
+//     else {
+//         console.log("Hello World");
 
-    }
-}
+//     }
+// }
 
 // While loop
-let j = 0;
-while (j <= 5) {
-    console.log(j);
-    j++;
-}
+// let j = 0;
+// while (j <= 5) {
+//     console.log(j);
+//     j++;
+// }
 
 /*=====  End of Section control flow  ======*/
