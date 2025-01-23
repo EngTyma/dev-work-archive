@@ -59,7 +59,7 @@ console.log(getGreeting());
  *
  */
 
-const expr = 'apple';
+const expr = 'Tomato';
 switch (expr) {
     case 'apple':
         console.log('It is an apple');
@@ -68,7 +68,8 @@ switch (expr) {
         console.log('It is a banana');
         break;
     default:
-        console.log('It is neither an apple nor a banana');
+        console.log("sorry we are out of stock" + "", expr);
+        // console.log('It is neither an apple nor a banana');
         break;
 
 }
