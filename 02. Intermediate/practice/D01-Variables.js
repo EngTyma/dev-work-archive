@@ -48,4 +48,26 @@
 
  /*=====  End of D01-Variables.js  ======*/
 
+ 
+ /*=============================================
+ =            Day2 Studying JavaScript            =
+ =============================================*/
+ 
+ 
+ /**
+  *
+  * Operators
+  *
+  */
+ 
+//  Assignment Operators
+let name1 = "John";
+let name2 = "Doe";
+ console.log(name1 = name2);
+ 
+ 
+ /*=====  End of Section comment block  ======*/
+ 
+ 
+
 
