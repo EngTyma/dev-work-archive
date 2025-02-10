@@ -22,16 +22,21 @@
 /*=====  Begin of Section 01.  =====*/
 
 // Declare an array with the "let" keyword
-let myData = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
 
-// Declare an array with the "var" keyword
-var myArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+var fruits = ['mangoes', 'Apple', 'Banana'];
 
-// Declare an array with the "let" keyword
-let myArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+console.log(fruits[0]);
 
-// Declare an array with the "var" keyword
-var myArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+// let myData = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+
+// // Declare an array with the "var" keyword
+// var myArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+
+// // Declare an array with the "let" keyword
+// let myArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+
+// // Declare an array with the "var" keyword
+// var myArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
 
 
 /*=====  End of Section comment block  ======*/
