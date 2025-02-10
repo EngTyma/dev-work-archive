@@ -27,16 +27,10 @@ var fruits = ['mangoes', 'Apple', 'Banana'];
 
 console.log(fruits[0]);
 
-// let myData = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+// add array value
 
-// // Declare an array with the "var" keyword
-// var myArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
-
-// // Declare an array with the "let" keyword
-// let myArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
-
-// // Declare an array with the "var" keyword
-// var myArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten"];
+fruits.push('Orange');
+console.log(fruits);
 
 
 /*=====  End of Section comment block  ======*/
