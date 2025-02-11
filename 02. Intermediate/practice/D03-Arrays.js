@@ -32,5 +32,22 @@ console.log(fruits[0]);
 fruits.push('Orange');
 console.log(fruits);
 
+// remove array value
+
+fruits.pop();
+console.log(fruits);
+
+// add array value
+
+fruits.unshift('Lemon');
+console.log(fruits);
+
+// remove array value
+
+fruits.shift();
+console.log(fruits);
+
+/*=====  End of Section 01.  =====*/
+
 
 /*=====  End of Section comment block  ======*/
