@@ -2,6 +2,8 @@
 =            D04-Function.js            =
 =============================================*/
 
+
+// function declaration
 function add(a, b) {
     return a + b;
 }
