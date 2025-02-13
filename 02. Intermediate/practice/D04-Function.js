@@ -35,4 +35,6 @@ function power(a, b) {
 console.log(power(2, 3));
 
 
+
+
 /*=====  End of Section D04-Function.js  ======*/
