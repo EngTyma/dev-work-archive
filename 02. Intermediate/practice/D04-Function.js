@@ -28,5 +28,11 @@ function divide(a, b) {
 
 console.log(divide(5, 3));
 
+function power(a, b) {
+    return a ** b;
+}
+
+console.log(power(2, 3));
+
 
 /*=====  End of Section D04-Function.js  ======*/
