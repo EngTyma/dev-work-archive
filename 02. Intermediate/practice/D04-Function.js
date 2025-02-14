@@ -68,5 +68,10 @@ function likePost() {
     document.getElementById("likeCount").innerText = count; // Update the text
 }
 
+function decrement() {
+    count--;
+    document.getElementById("likeCount").innerText = count;
+}
+
 
 /*=====  End of Section D04-Function.js  ======*/

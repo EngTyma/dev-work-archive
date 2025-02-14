@@ -10,7 +10,10 @@
     button {
         padding: 10px 20px;
         font-size: 16px;
+        background: dodgerblue;
+        color: white;
         cursor: pointer;
+        border: none;
     }
     
     p {
@@ -24,6 +27,10 @@
 
     <button onclick="likePost()">Like 👍</button>
     <p>Likes: <span id="likeCount">0</span></p>
+
+    <button onclick="decrement()">dislike </button>
+
+
     <input type="button" onclick="sayHello()" value="Say Hello" />
 
     <input type="button" value="Add" onclick="handleClick()" />
