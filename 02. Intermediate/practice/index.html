@@ -6,9 +6,24 @@
     <title>Test</title>
 </head>
 <!-- <link rel="stylesheet" href="style.css"> -->
+<style>
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    p {
+        font-size: 18px;
+        font-weight: bold;
+    }
+</style>
 
 <body>
     <h1>Hello World</h1>
+
+    <button onclick="likePost()">Like 👍</button>
+    <p>Likes: <span id="likeCount">0</span></p>
     <input type="button" onclick="sayHello()" value="Say Hello" />
 
     <input type="button" value="Add" onclick="handleClick()" />

@@ -61,7 +61,12 @@ function multiplyClick() {
 
 // console.log(power(2, 3));
 
+let count = 0; // Initialize like count
 
+function likePost() {
+    count++; // Increment count
+    document.getElementById("likeCount").innerText = count; // Update the text
+}
 
 
 /*=====  End of Section D04-Function.js  ======*/
