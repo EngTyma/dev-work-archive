@@ -51,15 +51,20 @@
         font-weight: bold;
         margin: 8%;
     }
+    
+    #likeCount {
+        font-size: 50px;
+    }
 </style>
 
 <body>
     <h1>Hello World</h1>
     <div class="container">
-        <p>Likes: <span id="likeCount">0</span></p>
+        <!-- <p>Likes: <span id="likeCount">0</span></p> -->
+        <p> <span id="likeCount">0</span></p>
 
         <button onclick="likePost()">Like 👍</button>
-        <button onclick="decrement()" style="background-color: crimson;">dislike </button>
+        <button onclick="decrement()" style="background-color: crimson;">dislike 👎</button>
 
 
     </div>
