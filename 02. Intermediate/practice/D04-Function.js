@@ -2,6 +2,9 @@
 =            D04-Function.js            =
 =============================================*/
 
+function sayHello() {
+    alert("Hello World")
+}
 
 // function declaration
 function add(a, b) {
