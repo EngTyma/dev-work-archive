@@ -7,6 +7,36 @@
 </head>
 <!-- <link rel="stylesheet" href="style.css"> -->
 <style>
+    *::before,
+    *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    h1 {
+        text-align: center;
+        font-size: 30px;
+        background: #ccc;
+        box-shadow: 0 0 10px #ccc;
+        margin: 0;
+        color: #fff;
+        text-shadow: 10px 10px 10px #000;
+        padding: 10px;
+    }
+    
+    .container {
+        margin-left: 20%;
+        margin-top: 6%;
+        margin-bottom: 3%;
+    }
+    
     button {
         padding: 10px 20px;
         font-size: 16px;
@@ -19,25 +49,27 @@
     p {
         font-size: 18px;
         font-weight: bold;
+        margin: 8%;
     }
 </style>
 
 <body>
     <h1>Hello World</h1>
+    <div class="container">
+        <p>Likes: <span id="likeCount">0</span></p>
 
-    <button onclick="likePost()">Like 👍</button>
-    <p>Likes: <span id="likeCount">0</span></p>
-
-    <button onclick="decrement()" style="background-color: crimson;">dislike </button>
+        <button onclick="likePost()">Like 👍</button>
+        <button onclick="decrement()" style="background-color: crimson;">dislike </button>
 
 
-    <input type="button" onclick="sayHello()" value="Say Hello" />
+    </div>
+    <!-- <input type="button" onclick="sayHello()" value="Say Hello" /> -->
 
-    <input type="button" value="Add" onclick="handleClick()" />
+    <!-- <input type="button" value="Add" onclick="handleClick()" />
     <input type="button" value="Subtract" onclick="subClick()" />
     <input type="button" value="Multiply" onclick="multiplyClick(2, 3)" />
     <input type="button" value="Divide" onclick="divideClick(5, 3)" />
-    <input type="button" value="Power" onclick="power(2, 3)" />
+    <input type="button" value="Power" onclick="power(2, 3)" /> -->
     <script src="D04-Function.js"></script>
 </body>
 
