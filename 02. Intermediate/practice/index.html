@@ -62,10 +62,55 @@
             justify-content: center;
             margin-top: 20px;
         }
+        
+        span {
+            position: relative;
+            font-family: "lato", sans-serif;
+            top: 20px;
+            color: white;
+            display: inline-block;
+            font-size: 5rem;
+            text-shadow: 0 1px 0 #b7b7b7, 0 2px 0 #fff, 0 3px 0 #b7b7b7, 0 4px 0 #fff, 0 5px 0 #b7b7b7, 0 6px 1px rgba(0, 0, 0, .1), 0 0 5px rgba(0, 0, 0, .1), 0 1px 3px rgba(0, 0, 0, .3), 0 3px 5px rgba(0, 0, 0, .2), 0 5px 10px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .2), 0 20px 20px rgba(0, 0, 0, .15);
+            animation: bounce .5s infinite;
+        }
+        
+        h1 span:nth-child(2) {
+            animation-delay: -.2s;
+        }
+        
+        h1 span:nth-child(3) {
+            animation-delay: -.4s;
+        }
+        
+        @keyframes pulse {
+            100% {
+                top: -20px;
+                transform: scale(1);
+            }
+        }
+        
+        h3 {
+            font-size: 100px;
+        }
+        
+        .hello {
+            color: red;
+        }
+        
+        .world {
+            color: green;
+        }
     </style>
 </head>
 
 <body>
+    <h3>
+        <span>H</span>
+        <span>E</span>
+        <span>L</span>
+        <span>L</span>
+        <span>0</span>
+    </h3>
     <h2 class="hello world">CodeSky</h2>
     <a href="https://github.com/Ebtisam98" class="btn-click">Ebtisam98</a>
     <h1 class="hello">Hello World</h1>
