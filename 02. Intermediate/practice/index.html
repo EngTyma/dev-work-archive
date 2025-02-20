@@ -54,11 +54,20 @@
         #likeCount {
             font-size: 50px;
         }
+        
+        .btn-click {
+            text-decoration: none;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 
 <body>
     <h2 class="hello world">CodeSky</h2>
+    <a href="https://github.com/Ebtisam98" class="btn-click">Ebtisam98</a>
     <h1 class="hello">Hello World</h1>
     <div class="container">
         <p> <span id="likeCount">0</span></p>
@@ -89,6 +98,10 @@
         // console.log(name.length);
         name[0].classList.add("hello");
         name[0].remove("hello");
+
+        const btn = document.querySelectorAll("a");
+        // btn[0].classList.remove("btn-click");
+        btn.classList.toggle("btn-click");
     </script>
 
 </body>
