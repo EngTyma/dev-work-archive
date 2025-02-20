@@ -1,82 +1,95 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test</title>
+    <style>
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            background: #ccc;
+            box-shadow: 0 0 10px #ccc;
+            margin: 0;
+            color: #fff;
+            text-shadow: 10px 10px 10px #000;
+            padding: 10px;
+        }
+        
+        .container {
+            margin-left: 20%;
+            margin-top: 6%;
+            margin-bottom: 3%;
+        }
+        
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background: dodgerblue;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        
+        p {
+            font-size: 18px;
+            font-weight: bold;
+            margin: 8%;
+        }
+        
+        #likeCount {
+            font-size: 50px;
+        }
+    </style>
 </head>
-<!-- <link rel="stylesheet" href="style.css"> -->
-<style>
-    *::before,
-    *::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    
-    h1 {
-        text-align: center;
-        font-size: 30px;
-        background: #ccc;
-        box-shadow: 0 0 10px #ccc;
-        margin: 0;
-        color: #fff;
-        text-shadow: 10px 10px 10px #000;
-        padding: 10px;
-    }
-    
-    .container {
-        margin-left: 20%;
-        margin-top: 6%;
-        margin-bottom: 3%;
-    }
-    
-    button {
-        padding: 10px 20px;
-        font-size: 16px;
-        background: dodgerblue;
-        color: white;
-        cursor: pointer;
-        border: none;
-    }
-    
-    p {
-        font-size: 18px;
-        font-weight: bold;
-        margin: 8%;
-    }
-    
-    #likeCount {
-        font-size: 50px;
-    }
-</style>
 
 <body>
+    <h2 class="hello world">CodeSky</h2>
     <h1 class="hello">Hello World</h1>
     <div class="container">
-        <!-- <p>Likes: <span id="likeCount">0</span></p> -->
         <p> <span id="likeCount">0</span></p>
 
         <button onclick="likePost()">Like 👍</button>
-        <button onclick="decrement()" style="background-color: crimson;">dislike 👎</button>
-
+        <button class="btn-decr" onclick="decrement()">dislike 👎</button>
 
     </div>
-    <!-- <input type="button" onclick="sayHello()" value="Say Hello" /> -->
 
-    <!-- <input type="button" value="Add" onclick="handleClick()" />
-    <input type="button" value="Subtract" onclick="subClick()" />
-    <input type="button" value="Multiply" onclick="multiplyClick(2, 3)" />
-    <input type="button" value="Divide" onclick="divideClick(5, 3)" />
-    <input type="button" value="Power" onclick="power(2, 3)" /> -->
-    <!-- <script src="D04-Function.js"></script> -->
-    <script src="D05-OBJ.js"></script>
+    <script>
+        let count = 0; // Initialize count
+
+        function likePost() {
+            count++; // Increase count for like
+            document.getElementById("likeCount").innerText = count;
+        }
+
+        function decrement() {
+            count--; // Decrease count for dislike
+            document.getElementById("likeCount").innerText = count;
+
+            // Accessing the first element with the class 'btn-decr' and changing its background color
+            document.getElementsByClassName("btn-decr")[0].style.background = "crimson";
+        }
+
+
+        const name = document.querySelectorAll("h2");
+        // console.log(name.length);
+        name[0].classList.add("hello");
+        name[0].remove("hello");
+    </script>
 
 </body>
 

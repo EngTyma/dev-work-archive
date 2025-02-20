@@ -10,6 +10,24 @@ const circle = {
 };
 
 
+// increment like count
+var count = 0;
+
+function likePost() {
+    count++;
+    document.getElementById("likeCount").innerText = count;
+
+}
+
+function decrement() {
+    count--;
+    document.getElementById("likeCount").innerText = count;
+    document.getElementsByClassName("btn-decr")[0].style.background = "crimson";
+
+}
+
+
+
 // dom function
 
 // select all elements with class name(getelemtnsByClassName),(getElementsByTagName),(getelementsById)
