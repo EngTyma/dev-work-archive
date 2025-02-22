@@ -21,6 +21,14 @@
         border-radius: 5px;
         cursor: pointer;
     }
+    
+    input {
+        padding: 10px;
+        width: 50%;
+        background: #fff;
+        border: 1px solid #ccc;
+        outline: none;
+    }
     /* alert {
         color: crimson;
     } */
@@ -28,10 +36,33 @@
 
 <body>
     <p><span class="text">0</span></p>
+
+    <!-- Input fields for a and b -->
+    <input class="input-a" type="number" placeholder="Enter a value for a">
+    <input class="input-b" type="number" placeholder="Enter a value for b">
+    <input class="add-input" type="text" placeholder="Result will appear here" readonly>
+
+    <button class="btn-click" onclick="add()">Click me</button>
+    <!-- <input class="add-input" type="text" placeholder="enter text"> -->
+
     <button class="btn-click" onclick="add()">click me</button>
     <button class="btn" onclick="syhello()">hello</button>
     <!--    <script src="D01-JS.JS"></script>-->
-    <script src="day1.js">
+
+    <script>
+        // Initializing a and b when the button is clicked
+        let a, b;
+
+        function add() {
+            // Get the values from the input fields
+            a = parseInt(document.querySelector('.input-a').value) || 0; // Default to 0 if empty
+            b = parseInt(document.querySelector('.input-b').value) || 0; // Default to 0 if empty
+
+            let c = a + b; // Calculate the sum
+
+            // Update the result input field with the sum
+            document.getElementsByClassName('add-input')[0].value = c;
+        }
     </script>
 </body>
 
