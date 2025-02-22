@@ -37,3 +37,5 @@ function decrement() {
 const hello = document.getElementsByTagName("h1")[0].style.color = "#FFF";
 
 // query selector
+
+const hello1 = document.querySelector("h1").style.color = "#FFF";
