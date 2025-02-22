@@ -8,6 +8,11 @@
 // var age = 23;
 // console.log(age);
 
+
+function syhello() {
+    alert("hello world");
+}
+
 const person = {
     name: "fatema",
     age: 23,
