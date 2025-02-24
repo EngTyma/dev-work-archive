@@ -29,9 +29,7 @@ let a, b;
 
 function add() {
     let c = a + b
-        // let d = ' ';
-        // document.getElementsByClassName(text).innerText = c;
+
     document.getElementsByClassName('add-input')[0].value = c;
-    // document.getElementsByClassName('text')[0].innerText = c;
 
 }
