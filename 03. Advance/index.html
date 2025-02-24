@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lesson day 1 js study</title>
 </head>
-<body>
+<style>
+    .text {
+        color: crimson;
+        font-size: 30px;
+    }
     
+    .btn-click {
+        background: crimson;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid red;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    
+    input {
+        padding: 10px;
+        width: 50%;
+        background: #fff;
+        border: 1px solid #ccc;
+        outline: none;
+    }
+    /* alert {
+        color: crimson;
+    } */
+</style>
+
+<body>
+    <p><span class="text">0</span></p>
+
+    <input class="input-a" type="number" placeholder="Enter a value for a">
+    <input class="input-b" type="number" placeholder="Enter a value for b">
+    <input class="add-input" type="text" placeholder="Result will appear here" readonly>
+
+    <button class="btn-click" onclick="add()">Click me</button>
+    <!-- <input class="add-input" type="text" placeholder="enter text"> -->
+
+    <button class="btn-click" onclick="add()">click me</button>
+    <button class="btn" onclick="syhello()">hello</button>
+    <!-- <script src="D01-JS.JS"></script> -->
+
+    <script>
+        let a, b;
+
+        function add() {
+            a = parseInt(document.querySelector('.input-a').value) || 0;
+            b = parseInt(document.querySelector('.input-b').value) || 0;
+
+            let c = a + b;
+
+            document.getElementsByClassName('add-input')[0].value = c;
+        }
+    </script>
 </body>
+
 </html>
