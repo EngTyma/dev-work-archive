@@ -86,7 +86,7 @@
         background: aquamarine;
         position: relative;
         padding: 20px;
-        top: 400px;
+        top: 10px;
     }
     
     .position {
@@ -96,11 +96,57 @@
         background: crimson;
         width: 100px;
     }
+    
+    .position-fixed {
+        height: 1200px;
+        background: olivedrab;
+    }
+    
+    .fixed {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        background: palevioletred;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    
+    .header {
+        position: sticky;
+        top: 0;
+        background: coral;
+        color: white;
+        padding: 10px;
+    }
+    
+    .content {
+        height: 2000px;
+        background: lightgray;
+        padding: 20px;
+    }
+    
+    .header-title {
+        background: dodgerblue;
+        position: sticky;
+        padding: 10px;
+        top: 0;
+        margin: 0;
+        box-sizing: border-box;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 100;
+        font-family: playfair display;
+    }
 </style>
 
 
 <body>
     <!-- css units -->
+
+    <header class="header-title">
+        welcome to my website
+    </header>
 
     <h4 id="h4-id">h4 id</h4>
     <!-- /*============================================= = Section css units = =============================================*/ -->
@@ -144,6 +190,21 @@
         <div class="position">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates autem blanditiis ad quam corporis pariatur beatae aut vero neque itaque!</p>
             <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi distinctio tempora eum, rem dolor modi nihil, molestias consectetur laudantium fugiat debitis minus vero quos magni recusandae repellat beatae quis? Labore? -->
+        </div>
+    </div>
+
+
+
+    <div class="position-fixed">
+        <div class="fixed">
+            <p>back to top</p>
+        </div>
+    </div>
+
+    <div class="header">
+        this is a header
+        <div class="content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae porro quam ex maxime expedita sed. Consequatur odio minus autem! Quibusdam error debitis nostrum vel culpa alias temporibus non ut quisquam.</p>
         </div>
     </div>
 
