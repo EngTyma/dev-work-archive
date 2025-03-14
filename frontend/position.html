@@ -105,6 +105,13 @@
         background: url('https://www.w3schools.com/css/img_fjords.jpg');
         filter: blur(2px);
     }
+    
+    .grayscale-filter {
+        width: 100%;
+        max-width: 600px;
+        display: block;
+        filter: grayscale(100%);
+    }
 </style>
 
 <body>
@@ -146,7 +153,19 @@
             <div class="blur-filter">
                 <!-- <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="fjords"> -->
             </div>
+
         </div>
+        <!-- grayscale filter -->
+        <div class="section">
+            <img class="grayscale-filter" src="https://images.pexels.com/photos/16100671/pexels-photo-16100671/free-photo-of-clouds-over-river-meanders.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="fjords">
+        </div>
+        <!--  filter -->
+        <div class="sepia-filter">
+            <img src="https://www.w3schools.com/css/img_fjords.jpg" alt="fjords">
+
+        </div>
+    </div>
+
 </body>
 
 </html>
