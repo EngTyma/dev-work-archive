@@ -4,78 +4,114 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pseudo element</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap');
+        /* reset css */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* general css */
+        
+        body {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            max-height: 100dvh;
+            width: 100%;
+            box-sizing: border-box;
+            max-width: 100dvw;
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+        .title::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: #ff6600;
+            margin: 10px auto 0;
+        }
+        
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .menu li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        .menu li a {
+            text-decoration: none;
+            color: #fff;
+            border-bottom: 2px solid transparent;
+            padding: 8px 15px;
+            font-size: 18px;
+        }
+        
+        .menu li a:hover {
+            border-color: #ff6600;
+            border-radius: 4px;
+        }
+        
+        .about {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .about::before {
+            content: '✅';
+            display: block;
+        }
+        
+        .skills {
+            list-style-type: none;
+            padding: 20px 0;
+        }
+        
+        .skills li {
+            margin: 5px 0;
+            width: 150px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin: 0 auto;
+        }
+        /* .skills li:nth-child(even) {
+            background: rgba(240, 240, 175, 0.333);
+        } */
+        
+        .skills li:nth-child(4) {
+            background: rgba(240, 240, 175, 0.333);
+        }
+    </style>
 </head>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-    /* reset css3 */
-    
-     ::before,
-     ::after {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    /* general css */
-    
-    body {
-        font-family: 'playfair', display;
-        margin: 0;
-        max-height: 100dvh;
-        width: 100%;
-        box-sizing: border-box;
-        max-width: 100dvw;
-    }
-    
-    header {
-        background: #333;
-        color: #fff;
-        text-align: center;
-        padding: 20p auto;
-        box-sizing: border-box;
-    }
-    
-    .title::after {
-        content: '';
-        display: block;
-        width: 100px;
-        height: 4px;
-        background: #ff6600;
-        margin: 10px auto 0;
-    }
-    
-    .menu {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        text-align: center;
-    }
-    
-    .menu li {
-        display: inline-block;
-        margin: 0 10px;
-    }
-    
-    .menu li a {
-        text-decoration: none;
-        color: #fff;
-    }
-</style>
 
 <body>
     <header>
         <h1 class="title">my portfolio</h1>
         <nav>
             <ul class="menu">
-                <l><a href="#">home</a></l>
-                <l><a href="#about">about</a></l>
-
-                <l><a href="#contact">contact</a></l>
+                <li><a href="#">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
-
     </header>
+
+
     <section class="about">
         <ul class="skills">
             <li>HTML</li>
