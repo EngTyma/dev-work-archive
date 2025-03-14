@@ -96,6 +96,40 @@
         .skills li:nth-child(4) {
             background: rgba(240, 240, 175, 0.333);
         }
+        
+        #contact {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        form {
+            display: inline-block;
+            text-align: center;
+            background: #f9f9f9;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        
+        .input {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        label {
+            text-align: start;
+        }
+        
+        .input:focus {
+            outline: none;
+            background: #366;
+            font-weight: 100;
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -127,7 +161,7 @@
             <label for="name">name</label>
             <input type="text" id="name" class="input" placeholder="enter your name" required>
             <label for="email">email</label>
-            <input type="email" id="email" class="email" placeholder="enter your email" required>
+            <input type="email" id="email" class="input" placeholder="enter your email" required>
             <button type="submit">submit</button>
 
         </form>
