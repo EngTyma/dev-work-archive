@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pseudo element</title>
 </head>
+<style>
+    /* reset css3 */
+</style>
 
 <body>
     <header>
@@ -12,12 +15,36 @@
         <nav>
             <ul class="menu">
                 <l><a href="#">home</a></l>
-                <l><a href="#">about</a></l>
+                <l><a href="#about">about</a></l>
                 <!-- <l><a href="#">services</a></l>
-                <l><a href="#">contact</a></l> -->
+              -->
+                <l><a href="#contact">contact</a></l>
             </ul>
         </nav>
+        <section class="about">
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>REACT</li>
+                <li>NODE</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <h2>contact us</h2>
+            <form action="#">
+                <label for="name">name</label>
+                <input type="text" id="name" class="input" placeholder="enter your name" required>
+                <label for="email">email</label>
+                <input type="email" id="email" class="email" placeholder="enter your email" required>
+                <button type="submit">submit</button>
+
+            </form>
+        </section>
     </header>
+    <footer>
+        <p>copyright &copy; 2025 my portfolio</p>
+    </footer>
 </body>
 
 </html>
