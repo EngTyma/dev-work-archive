@@ -7,8 +7,16 @@
 </head>
 <style>
     /* css combinator */
+    /* descendant selector */
     
-    .blog-post {}
+    .blog-post .title {
+        color: red;
+    }
+    /*  */
+    
+    .blog-post>.title {
+        color: orange;
+    }
 </style>
 
 <body>
