@@ -17,6 +17,14 @@
     .blog-post>.title {
         color: orange;
     }
+    
+    .blog-post .title+.description {
+        font-style: italic;
+    }
+    
+    .meta .author+.date {
+        font-style: italic;
+    }
 </style>
 
 <body>
@@ -25,7 +33,7 @@
         <h2 class="title">
             blog post
         </h2>
-        <p>this is a brief description of the blog post</p>
+        <p class="description">this is a brief description of the blog post</p>
         <div class="meta">
             <span class="author">written by fatima zahra</span>
             <span class="date">on 2 025-03-14</span>
