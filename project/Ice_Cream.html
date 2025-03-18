@@ -36,6 +36,57 @@
             font-size: 1.2rem;
             margin: 20px 0;
         }
+        /*     <!-- container for ice cream section 1-->
+ */
+        
+        .ice-cream-column {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .ice-cream-container {
+            display: flex;
+            flex-direction: column;
+            width: 280px;
+            background: #fff;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        
+        .ice-cream-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .ice-cream-name {
+            font-size: 1.5rem;
+            margin: 10px 0;
+            color: darkblue;
+        }
+        
+        .order {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 5px 0;
+        }
+        
+        .ice-cream-price {
+            font-size: 1.5rem;
+            color: #333;
+        }
+        
+        .ice-cream-btn {
+            padding: 10px 20px;
+            background: dodgerblue;
+            width: 60%;
+            border-radius: 5px;
+            color: #fff;
+            border: none;
+        }
     </style>
 </head>
 
@@ -49,14 +100,84 @@
             <br>
         </p>
     </div>
+    <!-- container for ice cream section 1-->
 
-    <div class="ice-cream">
+    <div class="ice-cream-column">
+        <!-- first ice cream -->
         <div class="ice-cream-container">
-            <img class="ice-cream-img" src="https://i.pinimg.com/736x/c0/4a/30/c04a309a82b8026a6f2e8a356fac37ea.jpg" alt="ice-cream"> Ice Cream
+            <img class="ice-cream-img" src="https://i.pinimg.com/736x/c0/4a/30/c04a309a82b8026a6f2e8a356fac37ea.jpg" alt="ice-cream">
+            <h2 class="ice-cream-name">Ice Cream</h2>
+            <div class="order">
+                <span class="ice-cream-price">$1.99</span>
+                <button class="ice-cream-btn">Add to Cart</button>
+
+            </div>
         </div>
-        <img src="https://i.pinimg.com/736x/c9/19/04/c91904653f69826ef28e0ddb178023ac.jpg" alt="">
+        <!-- second ice cream -->
+        <div class="ice-cream-container">
+            <img class="ice-cream-img" src="https://i.pinimg.com/736x/c9/19/04/c91904653f69826ef28e0ddb178023ac.jpg" alt="">
+            <h2 class="ice-cream-name">Ice Cream</h2>
+            <div class="order">
+                <span class="ice-cream-price">$1.99</span>
+                <button class="ice-cream-btn">Add to Cart</button>
+
+            </div>
+        </div>
+        <!-- third ice cream -->
+        <div class="ice-cream-container">
+            <img class="ice-cream-img" src="https://i.pinimg.com/474x/dd/cb/52/ddcb527d006a25df92213fffcd848a8d.jpg" alt="">
+            <h2 class="ice-cream-name">Ice Cream</h2>
+            <div class="order">
+                <span class="ice-cream-price">$1.99</span>
+                <button class="ice-cream-btn">Add to Cart</button>
+
+            </div>
+        </div>
+        <!-- fourth ice cream -->
+        <div class="ice-cream-container">
+            <img class="ice-cream-img" src="    https://i.pinimg.com/474x/a5/7d/eb/a57deb96de2715d0125787e06bce0276.jpg
+            " alt="">
+            <h2 class="ice-cream-name">Ice Cream</h2>
+            <div class="order">
+                <span class="ice-cream-price">$1.99</span>
+                <button class="ice-cream-btn">Add to Cart</button>
+
+            </div>
+        </div>
     </div>
-    <img src="https://i.pinimg.com/474x/c6/5b/60/c65b60705ee905052abf6eb5e143b005.jpg" alt="">
+    <!-- container for ice cream section 2-->
+    <!-- <div class="ice-cream-row">
+        <!-- first ice cream -->
+    <div class="ice-cream-sec-2">
+        <img class="ice-cream-img" src="https://i.pinimg.com/736x/c0/4a/30/c04a309a82b8026a6f2e8a356fac37ea.jpg" alt="ice-cream">
+        <h2 class="ice-cream-name">Ice Cream</h2>
+        <p class="ice-cream-price">$1.99</p>
+        <button class="ice-cream-btn">Add to Cart</button>
+    </div>
+    <!-- second ice cream -->
+    <div class="ice-cream-sec-2">
+        <img class="ice-cream-img" src="https://i.pinimg.com/736x/c9/19/04/c91904653f69826ef28e0ddb178023ac.jpg" alt="">
+        <h2 class="ice-cream-name">Ice Cream</h2>
+        <p class="ice-cream-price">$1.99</p>
+        <button class="ice-cream-btn">Add to Cart</button>
+    </div>
+    <!-- third ice cream -->
+    <div class="ice-cream-sec-2">
+        <img class="ice-cream-img" src="https://i.pinimg.com/474x/dd/cb/52/ddcb527d006a25df92213fffcd848a8d.jpg" alt="">
+        <h2 class="ice-cream-name">Ice Cream</h2>
+        <p class="ice-cream-price">$1.99</p>
+        <button class="ice-cream-btn">Add to Cart</button>
+    </div>
+    <!-- fourth ice cream -->
+    <div class="ice-cream-sec-2">
+        <img class="ice-cream-img" src="    https://i.pinimg.com/474x/a5/7d/eb/a57deb96de2715d0125787e06bce0276.jpg
+            " alt="">
+        <h2 class="ice-cream-name">Ice Cream</h2>
+        <p class="ice-cream-price">$1.99</p>
+        <button class="ice-cream-btn">Add to Cart</button>
+    </div>
+    </div> -->
+    <!-- <img src="https://i.pinimg.com/474x/c6/5b/60/c65b60705ee905052abf6eb5e143b005.jpg" alt=""> -->
 </body>
 
 </html>
