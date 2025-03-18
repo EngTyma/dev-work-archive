@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>css flexbox</title>
 </head>
+<style>
+    /* css reset */
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* general css */
+    
+    body {
+        font-family: arial;
+        background: #fff;
+        color: #333;
+        line-gap-override: 1.6;
+    }
+    
+    header {
+        text-align: center;
+        background: #333;
+        color: white;
+        padding: 40px 20px;
+    }
+    /* css flexbox */
+    
+    .product-container {
+        display: flex;
+        /* flex-wrap: wrap; */
+        justify-content: center;
+        gap: 20px;
+        height: 100vh;
+    }
+    
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* height: 100vh; */
+        background: white;
+        border-radius: 10px;
+        box-sizing: 0 4px rgba(0, 0, 0, 0.1);
+    }
+</style>
 
 <body>
     <!-- css flexbox -->
