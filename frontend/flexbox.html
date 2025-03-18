@@ -3,100 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>css flexbox</title>
+    <title>CSS Flexbox</title>
+    <style>
+        /* CSS reset */
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* General CSS */
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 40px 20px;
+        }
+        /* CSS Flexbox */
+        
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        
+        .product-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            padding: 20px;
+            transition: transform 0.3s ease;
+        }
+        
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .product-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .product-title {
+            font-size: 1.2em;
+            margin: 15px 0;
+        }
+        
+        .product-description {
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 1em;
+        }
+        
+        .product-price {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .product-btn {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .product-btn:hover {
+            background-color: #555;
+        }
+    </style>
 </head>
-<style>
-    /* css reset */
-    
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    /* general css */
-    
-    body {
-        font-family: arial;
-        background: #fff;
-        color: #333;
-        line-gap-override: 1.6;
-    }
-    
-    header {
-        text-align: center;
-        background: #333;
-        color: white;
-        padding: 40px 20px;
-    }
-    /* css flexbox */
-    
-    .product-container {
-        display: flex;
-        /* flex-wrap: wrap; */
-        justify-content: center;
-        gap: 20px;
-        height: 100vh;
-    }
-    
-    .product-card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        /* height: 100vh; */
-        background: white;
-        border-radius: 10px;
-        box-sizing: 0 4px rgba(0, 0, 0, 0.1);
-    }
-</style>
 
 <body>
-    <!-- css flexbox -->
+    <!-- CSS Flexbox -->
     <header>
-        <h1>out amazing product</h1>
-        <p>explore a collection of high quality products</p>
-
+        <h1>Our Amazing Products</h1>
+        <p>Explore a collection of high-quality products</p>
     </header>
     <main>
         <div class="product-container">
             <div class="product-card">
-                <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlndpwDalSNF8TzBG6T7kGv73l0IOReNJpKw&s" alt="">
-
-                <H1 class="product-title">product 1</H1>
-                <p class="product-description">
-                    this is a great product with amazing features
-                </p>
+                <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlndpwDalSNF8TzBG6T7kGv73l0IOReNJpKw&s" alt="Product 1">
+                <h1 class="product-title">Product 1</h1>
+                <p class="product-description">This is a great product with amazing features</p>
                 <span class="product-price">$100</span>
-                <button class="product-btn">add to cart</button>
+                <button class="product-btn">Add to Cart</button>
             </div>
             <div class="product-card">
-                <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlndpwDalSNF8TzBG6T7kGv73l0IOReNJpKw&s" alt="">
-
-                <H1 class="product-title">product 1</H1>
-                <p class="product-description">
-                    this is a great product with amazing features
-                </p>
-                <span class="product-price">$100</span>
-                <button class="product-btn">add to cart</button>
+                <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlndpwDalSNF8TzBG6T7kGv73l0IOReNJpKw&s" alt="Product 2">
+                <h1 class="product-title">Product 2</h1>
+                <p class="product-description">This is a great product with amazing features</p>
+                <span class="product-price">$120</span>
+                <button class="product-btn">Add to Cart</button>
             </div>
             <div class="product-card">
-                <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlndpwDalSNF8TzBG6T7kGv73l0IOReNJpKw&s" alt="">
-
-                <H1 class="product-title">product 1</H1>
-                <p class="product-description">
-                    this is a great product with amazing features
-                </p>
-                <span class="product-price">$100</span>
-                <button class="product-btn">add to cart</button>
+                <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlndpwDalSNF8TzBG6T7kGv73l0IOReNJpKw&s" alt="Product 3">
+                <h1 class="product-title">Product 3</h1>
+                <p class="product-description">This is a great product with amazing features</p>
+                <span class="product-price">$130</span>
+                <button class="product-btn">Add to Cart</button>
             </div>
             <div class="product-card">
-                <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlndpwDalSNF8TzBG6T7kGv73l0IOReNJpKw&s" alt="">
-
-                <H1 class="product-title">product 1</H1>
-                <p class="product-description">
-                    this is a great product with amazing features
-                </p>
-                <span class="product-price">$100</span>
-                <button class="product-btn">add to cart</button>
+                <img class="product-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlndpwDalSNF8TzBG6T7kGv73l0IOReNJpKw&s" alt="Product 4">
+                <h1 class="product-title">Product 4</h1>
+                <p class="product-description">This is a great product with amazing features</p>
+                <span class="product-price">$140</span>
+                <button class="product-btn">Add to Cart</button>
             </div>
         </div>
     </main>
