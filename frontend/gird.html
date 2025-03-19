@@ -68,6 +68,57 @@
         font-size: 1.3rem;
         border-radius: 8px;
     }
+    /* spanning-grid-section */
+    
+    .spanning-grid-section {
+        background: #fff;
+        padding: 40px;
+        margin: 20px auto;
+        max-width: 1000px;
+    }
+    
+    .spanning-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(2, 200px);
+        grid-gap: 20px;
+    }
+    
+    .spanning-grid-box-1 {
+        background: aqua;
+        padding: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.3rem;
+        border-radius: 8px;
+    }
+    
+    .spanning-grid-box-2 {
+        background: rgb(50, 160, 233);
+        padding: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.3rem;
+        border-radius: 8px;
+    }
+    
+    .spanning-grid-box-3 {
+        background: rgb(0, 42, 255);
+        padding: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.3rem;
+        border-radius: 8px;
+    }
+    
+    .spanning-grid-box-4 {
+        background: rgb(223, 78, 93);
+        padding: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.3rem;
+        border-radius: 8px;
+    }
 </style>
 
 <body>
@@ -103,10 +154,10 @@
             Spanning grid layout
         </h1>
         <div class="spanning-grid">
-            <div class="spanning-grid-box">box 1</div>
-            <div class="spanning-grid-box">box 2</div>
-            <div class="spanning-grid-box">box 3</div>
-            <div class="spanning-grid-box">box 4</div>
+            <div class="spanning-grid-box-1">box 1</div>
+            <div class="spanning-grid-box-2">box 2</div>
+            <div class="spanning-grid-box-3">box 3</div>
+            <div class="spanning-grid-box-4">box 4</div>
         </div>
     </section>
     <!-- alignment grid layout section -->
