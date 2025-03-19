@@ -121,6 +121,58 @@
         font-size: 1.3rem;
         border-radius: 8px;
     }
+    /* alignment-grid-section */
+    
+    .alignment-grid-section {
+        background: #fff;
+        padding: 40px;
+        margin: 20px auto;
+        max-width: 1000px;
+        box-shadow: 0 9px 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    .alignment-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+    }
+    
+    .alignment-grid-box-1 {
+        background: linear-gradient(90deg, lightcoral, lightblue);
+        padding: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.2rem;
+        border-radius: 8px;
+    }
+    
+    .alignment-grid-box-2 {
+        background: radial-gradient(circle, lightcoral, lightblue);
+        padding: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        /* align-items: center; */
+    }
+    
+    .alignment-grid-box-3 {
+        background: linear-gradient(90deg, lightcoral, lightblue);
+        padding: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.2rem;
+        border-radius: 8px;
+    }
+    
+    .alignment-grid-box-4 {
+        background: linear-gradient(90deg, lightcoral, lightblue);
+        padding: 40px;
+        text-align: center;
+        color: #fff;
+        font-size: 1.2rem;
+        border-radius: 8px;
+    }
 </style>
 
 <body>
@@ -168,10 +220,10 @@
             alignment grid layout
         </h1>
         <div class="alignment-grid">
-            <div class="alignment-grid-box">box 1</div>
-            <div class="alignment-grid-box">box 2</div>
-            <div class="alignment-grid-box">box 3</div>
-            <div class="alignment-grid-box">box 4</div>
+            <div class="alignment-grid-box-1">box 1</div>
+            <div class="alignment-grid-box-2">box 2</div>
+            <div class="alignment-grid-box-3">box 3</div>
+            <div class="alignment-grid-box-4">box 4</div>
         </div>
     </section>
 </body>
