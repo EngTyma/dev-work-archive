@@ -104,6 +104,24 @@
         transform: scale(1.1);
     }
     /* animation */
+    
+    .ball {
+        width: 3.125rem;
+        height: 3.125rem;
+        background: coral;
+        border-radius: 50%;
+        animation: bounce 1s ease-in;
+    }
+    
+    @keyframes bounce {
+        0%,
+        100% {
+            transform: translateX(0);
+        }
+        50% {
+            transform: translateX(-30px);
+        }
+    }
 </style>
 
 <body>
@@ -152,7 +170,7 @@
             <div class="container">
                 <div class="ball">
                     <p class="fade-text">
-                        dive deeper into the power of css animations
+                        the power animations
                     </p>
                 </div>
 
