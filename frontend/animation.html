@@ -106,8 +106,8 @@
     /* animation */
     
     .ball {
-        width: 3.125rem;
-        height: 3.125rem;
+        width: 50px;
+        height: 50px;
         background: coral;
         border-radius: 50%;
         animation: bounce 1s infinite ease-in;
@@ -116,10 +116,25 @@
     @keyframes bounce {
         0%,
         100% {
-            transform: translateX(0);
+            transform: translateY(0);
         }
         50% {
-            transform: translateX(-30px);
+            transform: translateY(-30px);
+        }
+    }
+    
+    .fade-text {
+        font-size: 1.5rem;
+        animation: fade 2s infinite;
+    }
+    
+    @keyframes fade {
+        0%,
+        100% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0.3;
         }
     }
 </style>
@@ -169,11 +184,11 @@
             <h2>css animations</h2>
             <div class="container">
                 <div class="ball">
-                    <p class="fade-text">
-                        the power animations
-                    </p>
-                </div>
 
+                </div>
+                <p class="fade-text">
+                    the power animations
+                </p>
             </div>
         </section>
     </main>
