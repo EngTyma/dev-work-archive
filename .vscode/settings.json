@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/project/Ice_Cream.html"
+    "livePreview.defaultPreviewPath": "/project/Ice_Cream.html",
+    "liveServer.settings.port": 5501
 }
