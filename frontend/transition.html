@@ -5,31 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Transitions</title>
 </head>
-.{ /* reset css */ }
 
+<style>
+    /* css reset */
+    
+    * {
+        margin: 0;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    /* general style */
+    
+    body {
+        font-family: sans-serif;
+        line-height: 1.5;
+        height: 100vh;
+    }
+    /* Outer Container style */
+    
+    .wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        height: 100vh;
+    }
+    /* children styling */
+    
+    .box {
+        width: 300px;
+        height: 280px;
+        color: white;
+        padding: 20px;
+        background: dodgerblue;
+        border-radius: 20px;
+    }
+    /* inner container */
+    
+    .box__inner {
+        display: flex;
+        flex-direction: column;
+        transition: background-color 0.6s, border-radius 0.9s ease-in;
+    }
+    
+    .box__inner:hover {
+        background-color: aqua;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    }
+    
+    .box-3 {
+        transition: transform 0.4s ease-in;
+    }
+    
+    .box-3:hover {
+        transform: scale(1.1) rotate(15deg);
+    }
+    
+    .box-1:hover {
+        transform: scale(1.1);
+    }
+</style>
 
 <body>
     <!-- 1️⃣ CSS Transitions (Smooth changes over time) -->
-    <div class="box">
-        <div class="box__inner">
-            <h1>CSS Transitions</h1>
-            <p>Smooth changes over time</p>
+    <div class="wrapper">
+        <div class="box box-1">
+            <div class="box__inner">
+                <h1>CSS Transitions</h1>
+                <p>Smooth changes over time</p>
+            </div>
         </div>
-    </div>
 
-    <!-- 2️⃣ CSS Animations (Animated elements) -->
-    <div class="box">
-        <div class="box__inner">
-            <h1>CSS Animations</h1>
-            <p>Animated elements</p>
+        <!-- 2️⃣ CSS Animations (Animated elements) -->
+        <div class="box">
+            <div class="box__inner">
+                <h1>CSS Animations</h1>
+                <p>Animated elements</p>
+            </div>
         </div>
-    </div>
 
-    <!--3️⃣ CSS Transforms (Move elements) -->
-    <div class="box">
-        <div class="box__inner">
-            <h1>CSS Transforms</h1>
-            <p>Move elements</p>
+        <!--3️⃣ CSS Transforms (Move elements) -->
+        <div class="box box-3">
+            <div class="box__inner">
+                <h1>CSS Transforms</h1>
+                <p>Move elements</p>
+            </div>
         </div>
     </div>
 </body>
