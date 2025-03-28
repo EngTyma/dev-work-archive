@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animated Transitions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
 </head>
 
 <style>
@@ -63,22 +65,83 @@
     }
     
     .box-1 {
+        /* transform: translate(150px, 140px); */
+        /* transform: translateX(-150px); */
+        transform: translateY(-150px);
         transition: background-color 0.4s, box-shadow 0.4s, border 0.3s ease-in-out;
     }
+    /* .box__inner img {} */
     
     .box-1:hover {
         background: lavender;
         border: 2px solid dodgerblue;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
-        transform: scale(1.1);
+        /* Moves right 150px, down 140px */
+    }
+    
+    .img {
+        background-image: url("");
+        margin: 80px;
+        width: 400px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        mix-blend-mode: screen;
+    }
+    
+    .container {
+        background: #f0f0f0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        color: #333;
+    }
+    
+    .about h1 {
+        margin-left: 30px;
+        font-size: 2.5rem;
+    }
+    
+    .social-links i {
+        padding: 10px;
+        margin-right: 5px;
+        font-size: 2.5rem;
+    }
+    
+    .fa-facebook,
+    .fa-linkedin {
+        color: dodgerblue;
+    }
+    
+    .fa-instagram {
+        color: hotpink;
+    }
+    
+    .content a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px;
     }
 </style>
 
 <body>
+    <div class="img">
+        <img src="https://i.pinimg.com/474x/f4/47/3e/f4473ec036fff9c6849aa9ee4b078eba.jpg" alt="">
+
+    </div>
     <!-- 1️⃣ CSS Transitions (Smooth changes over time) -->
     <div class="wrapper">
         <div class="box box-1">
             <div class="box__inner">
+                <img src="https://i.pinimg.com/474x/a4/05/1b/a4051b90274caad45bfd371306bc4379.jpg" alt="">
                 <h1>CSS Transitions</h1>
                 <p>Smooth changes over time</p>
             </div>
@@ -100,6 +163,42 @@
             </div>
         </div>
     </div>
+    <!-- footer section -->
+    <footer>
+        <div class="container">
+            <div class="content">
+                <div class="about">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Cum expedita quibusdam quasi nemo necessitatibus sed id</p>
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- quick links -->
+            <div class="content">
+                <!-- <div class="link"> -->
+                <h1>Quick Links</h1>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">services</a>
+                <a href="#">Contact</a>
+                <!-- </div> -->
+            </div>
+            <div class="content">
+                <!-- <div class="contact-us"> -->
+                <h1>Contact Us</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+252628901254</a>
+
+                <a href="#"><i class="fa-solid fa-envelope"></i>animation@gmail.com</a>
+
+                <!-- </div> -->
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
