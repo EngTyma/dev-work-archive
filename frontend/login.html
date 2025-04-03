@@ -1,150 +1,95 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
-    <style>
-        /* Reset styles */
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        /* General styles */
-        
-        body {
-            line-height: 1.5;
-            font-family: Arial, Helvetica, sans-serif;
-            background: url('https://images.pexels.com/photos/31008030/pexels-photo-31008030/free-photo-of-vibrant-night-skyline-of-osaka-japan.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .container {
-            width: 400px;
-            background: rgba(255, 255, 255, 0.1);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            padding: 20px;
-            backdrop-filter: blur(10px);
-        }
-        
-        .header {
-            color: #fff;
-            text-align: center;
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-        
-        .form-group {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-        
-        .input-container {
-            position: relative;
-        }
-        
-        .input-container input {
-            width: 100%;
-            padding: 10px;
-            padding-left: 35px;
-            background: transparent;
-            color: #fff;
-            font-size: 1rem;
-            border: 1px solid #fff;
-            border-radius: 5px;
-            outline: none;
-            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        }
-        
-         ::placeholder {
-            color: #fff;
-            opacity: 1;
-            font-size: 1.2rem;
-        }
-        
-        .input-container i {
-            position: absolute;
-            right: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #fff;
-        }
-        
-        .check {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        a,
-        p {
-            text-decoration: none;
-            color: #fff;
-            font-size: 1rem;
-        }
-        
-        button {
-            width: 100%;
-            padding: 10px;
-            font-size: 1rem;
-            background-color: #f0f0f0;
-            color: #333;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        
-        button:hover {
-            background-color: #fff;
-        }
-        
-        .error {
-            text-align: center;
-        }
-    </style>
+    <title>login UI</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #f0f0f0;
+    }
+    
+    form {
+        width: 400px;
+        height: 380px;
+        padding: 1em 2em;
+        background: #fff;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+    }
+    
+    form h1 {
+        text-align: center;
+        margin-top: 10px;
+    }
+    
+    .form-group {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .form-group label {
+        margin-bottom: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .form-group input {
+        border: 1px solid #ccc;
+        width: 100%;
+        padding: .25rem;
+        outline: none;
+    }
+    
+    .form-group i {
+        position: absolute;
+        right: 8%;
+        top: 60%;
+    }
+    
+    form button {
+        padding: 1em 2em;
+        color: #fff;
+        background: lightslategray;
+        border: none;
+        width: 100%;
+        border-radius: 10px;
+    }
+</style>
 
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Login</h1>
-        </div>
-
         <form action="#">
+            <h1>Login Form</h1>
             <div class="form-group">
-                <div class="input-container">
-                    <i class="fa-solid fa-user"></i>
-                    <input type="text" placeholder="Username" required>
-                </div>
-
-                <div class="input-container">
-                    <i class="fa-solid fa-lock"></i>
-                    <input type="password" placeholder="Password" required>
-                </div>
-
-                <div class="check">
-                    <p><input type="checkbox"> Remember Me</p>
-                    <a href="#">Forgot password?</a>
-                </div>
-
-                <button type="submit">Login</button>
-                <p class="error">
-                    Don't have an account? <a href="#">Sign Up</a>
-                </p>
+                <label>Email</label>
+                <input type="name" placeholder="email">
+                <i class='bx bxs-email-pin'></i>
             </div>
+            <div class="form-group">
+                <label>Username</label>
+                <input type="name" placeholder="username">
+                <i class='bx bxs-user-pin'></i>
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="Password" placeholder="Password">
+                <i class='bx bxs-lock-alt'></i> </div>
+            <button type="submit">Login</button>
         </form>
     </div>
 </body>
