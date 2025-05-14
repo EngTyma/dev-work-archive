@@ -1,0 +1,194 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+</head>
+<style>
+    *::before,
+     ::after,
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        height: 700px;
+        background: url('https://i.pinimg.com/736x/f8/5b/d8/f85bd8bb534e6ab9621891dd0c7a3f5d.jpg') center center /cover no-repeat;
+        position: relative;
+    }
+    
+    .overlay {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(25, 25, 125, 0.8);
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        left: 0;
+    }
+    
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        z-index: 2;
+        background-color: dodgerblue;
+    }
+    /* .logo {
+        background: url('https://i.pinimg.com/736x/f4/64/f6/f464f606cb09553e36cfa1f1097e6b98.jpg') center center/cover no-repeat;
+        -webkit-background-clip: text;
+        font-size: 3rem;
+        -webkit-text-fill-color: transparent;
+    } */
+    
+    ul {
+        list-style: none;
+        display: flex;
+    }
+    
+    li {
+        margin-left: 2rem;
+        text-transform: capitalize;
+    }
+    
+    a {
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+        transition: transform 0.5s ease-in-out, border-bottom 0.5s ease-in-out;
+    }
+    
+    a:hover {
+        border-bottom: 2px solid black;
+        transform: translateX(100px)
+    }
+    
+    .hero {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #ccc;
+        line-height: 1.5;
+    }
+    
+    h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        background: url('https://i.pinimg.com/736x/f4/64/f6/f464f606cb09553e36cfa1f1097e6b98.jpg') center center/cover no-repeat;
+        /* background: linear-gradient(to right, white, orange, crimson); */
+        -webkit-background-clip: text;
+        /* font-size: 3rem; */
+        -webkit-text-fill-color: transparent;
+    }
+    
+    p {
+        font-family: papyrus;
+    }
+    
+    .btn {
+        display: flex;
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    button {
+        padding: 1em 2em;
+        border: 1px solid;
+        color: white;
+        background: transparent;
+        border-radius: 20px;
+        transition: transform 0.8s ease-in-out, background 0.9s ease-in-out;
+    }
+    
+    .btn-active {
+        background-color: seagreen;
+        border: none;
+    }
+    
+    .btn-hover:hover {
+        background-color: seagreen;
+        border: none;
+        transform: scale(1.09);
+        /* transform: translateX(100px); */
+    }
+    
+    .container::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100px;
+        background-color: white;
+        width: 100%;
+        z-index: 3;
+        border-radius: 100% 100% 0 0;
+    }
+    
+    .menu-toggle {
+        display: none;
+    }
+    
+    @media (max-width:768px) {
+        .header {
+            padding: 20px;
+            color: white;
+        }
+        .header .nav-list {
+            display: none;
+        }
+        .hero {
+            display: flex;
+            max-width: 300px;
+        }
+        .menu-toggle {
+            display: block;
+            cursor: pointer;
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="overlay">
+            <header>
+                <div class="header">
+                    <div class="logo">Agan Hotel</div>
+                    <div class="menu-toggle">
+                        &#9776
+                    </div>
+                    <ul class="nav-list">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">services</a></li>
+                    </ul>
+                </div>
+            </header>
+            <div class="hero">
+                <h1>welcome to Agan Hotel</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum porro obcaecati, doloremque in deleniti ipsa consequuntur adipisci vel numquam. Totam.</p>
+                <div class="btn">
+                    <button class="btn-active">See more</button>
+                    <button class="btn-hover">Book</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
