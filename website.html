@@ -160,6 +160,55 @@
             cursor: pointer;
         }
     }
+    
+    .service-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        padding: 10px;
+    }
+    
+    .flex-services {
+        width: 290px;
+        display: flex;
+        flex-direction: column;
+        background: #ccc;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px #ccc;
+        text-align: center;
+    }
+    
+    .flex-services img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .price-content {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 2px;
+        vertical-align: middle;
+    }
+    
+    .btn-book {
+        border: 1px solid #fff;
+        border-radius: 0;
+        width: max-content;
+    }
+    
+    .price {
+        margin: 10px 10px 0;
+        color: #fff;
+    }
+    
+    strong {
+        color: black;
+    }
+    
+    .room-title {
+        padding: 10px 0;
+    }
 </style>
 
 <body>
@@ -190,6 +239,57 @@
             </div>
         </div>
     </div>
+
+
+    <section class="services">
+        <div class="service-container">
+            <div class="flex-services">
+                <img src="https://i.pinimg.com/736x/75/93/0f/75930f4148b3dd4b27d9e2b3a1589e1d.jpg">
+                <h1 class="room-title">Vip Room</h1>
+                <div class="price-content">
+                    <span class="price"><strong>399$</strong>/Night</span>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+            <!-- room 2 -->
+            <div class="flex-services">
+                <img src="https://i.pinimg.com/736x/ec/9f/4f/ec9f4f1ad429fac5b34c66945a68479b.jpg" alt="">
+                <h1 class="room-title">Vip Room</h1>
+                <div class="price-content">
+                    <span class="price"><strong>399$</strong>/Night</span>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+            <!-- room 3 -->
+            <div class="flex-services">
+                <img src="https://i.pinimg.com/736x/11/fd/7a/11fd7ababb17f8c9c0cd48e09239f0d7.jpg">
+                <h1 class="room-title">Vip Room</h1>
+                <div class="price-content">
+                    <span class="price"><strong>399$</strong>/Night</span>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+            <!-- room 4 -->
+            <div class="flex-services">
+                <img src="https://i.pinimg.com/736x/b9/8e/87/b98e87f0fd7c05db8ad4b2e3288e1dd5.jpg">
+                <h1 class="room-title">Vip Room</h1>
+                <div class="price-content">
+                    <span class="price"><strong>399$</strong>/Night</span>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+            <!-- room 5 -->
+            <div class="flex-services">
+                <img src="https://i.pinimg.com/736x/a5/79/71/a5797124a42aef5ccd535528dcf11b9b.jpg" alt="">
+                <h1 class="room-title">Vip Room</h1>
+                <div class="price-content">
+                    <span class="price"><strong>399$</strong>/Night</span>
+                    <button class="btn-book">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
 </body>
 
 </html>
