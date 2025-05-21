@@ -25,13 +25,32 @@
             border-bottom-right-radius: 1.5rem !important;
             border-radius: 100% 100% 0 0;
         }
+        
+        .img-border {
+            border-bottom-left-radius: 5.4rem !important;
+            border-bottom-right-radius: 5.5rem !important;
+            border-radius: 0% 100% 0 0 !important;
+        }
     </style>
 </head>
 
 <body>
+
     <!-- 🔷 1. Grid System – Basic Structure-->
     <p class="container bg-primary text-light lead">Bootstrap uses a 12-column responsive grid system.
     </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="https://i.pinimg.com/736x/f8/15/b1/f815b139bf2a952fb8a8e8bca24b9bd4.jpg" class="img-fluid img-border img-thumbnail w-100 mx-auto d-block rounded " style="height: 200px;object-fit: cover;">
+                <div class="text-center p-2 bg-info">
+                    <h1 class="display-4">hello world</h1>
+                    <p class="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex repudiandae ratione quae beatae neque nulla corporis id ullam veniam impedit?</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <!-- ✅ container – adds spacing around the content -->
