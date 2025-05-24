@@ -66,6 +66,17 @@
         inset: 0;
         background-color: rgba(0, 0, 0, 0.5);
     }
+
+    .container::after{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 80px;
+        background: #fff;
+        border-radius: 100% 100% 0 0;
+    }
     
     .container .hero-section {
         background: url('https://i.pinimg.com/736x/ef/98/c6/ef98c6dd696241318ceacd271fea0552.jpg') center center / cover no-repeat;
@@ -107,6 +118,33 @@
         z-index: 3;
         border-radius: 3rem;
     }
+    .about{
+        position: relative;
+        margin-top: 3rem;
+    }
+    .about-content{
+        display: flex;
+        justify-content: space-between;
+
+    }
+.about h1{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    border-bottom: 2px solid orange;
+    padding-bottom: .50rem;
+    width: fit-content;
+}
+.about-img{
+    padding: 10px;
+    
+}
+img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
 </style>
 
 <body>
@@ -137,7 +175,6 @@
 
                 </nav>
             </header>
-
             <div class="hero-section">
                 <h1 class="text-title">Welcome to sky code designer</h1>
                 <p class="para-text">your one-stop solution for web design and development</p>
@@ -145,6 +182,24 @@
             </div>
         </div>
     </div>
+
+    <!-- about us section -->
+
+    <section class="about">
+            <h1>About us</h1>
+     <div class="about-content">
+           <div class="about-img">
+            <img src="https://i.pinimg.com/736x/bb/e2/ba/bbe2ba148e02e40efe68e1c1355ce897.jpg" alt="...">
+        </div>
+        <div class="about-description">
+            <p class="para-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus ad dolorum, velit harum ut vero aspernatur ipsam est deleniti natus quidem, magnam enim architecto reprehenderit officia neque consequatur qui.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quas eius! Asperiores corrupti quidem, quas quia veritatis obcaecati in vero quam quibusdam recusandae illum tenetur nam accusantium eos. Minus impedit sequi rerum magnam vel debitis tempora ipsa nam quia. Voluptatum, molestiae minima obcaecati nostrum illo dignissimos sint eligendi pariatur excepturi libero reiciendis quia ratione ut iusto non aliquam esse beatae ipsa magnam! Fuga vero, inventore reprehenderit voluptatem, similique molestiae dolor accusamus deleniti quod aliquid labore quisquam, laborum repudiandae ex? Reprehenderit accusamus, ullam est placeat necessitatibus voluptates soluta in eos libero suscipit quaerat facilis recusandae ipsam maiores incidunt nulla modi ducimus.
+            </p>
+            <a href="#">Read more</a>
+        </div>
+     </div>
+    </section>
 
 </body>
 
