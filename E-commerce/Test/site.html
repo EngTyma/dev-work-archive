@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .container {
+        position: relative;
+        z-index: 1;
+    }
+    /* .overlay {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+     */
+    
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1em;
+        background: #fff;
+        box-shadow: 0 4px 10px #ccc;
+        position: relative;
+        z-index: 3;
+    }
+    
+    .navbar ul {
+        display: flex;
+        gap: 10px;
+        list-style-type: none;
+    }
+    
+    .navbar li {
+        margin-right: 1rem;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        text-transform: capitalize;
+        color: black;
+    }
+    
+    .navbar button {
+        text-transform: capitalize;
+        padding: 0.50em;
+        border: none;
+        color: white;
+        cursor: pointer;
+        background: orange;
+    }
+    
+    .container::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .container .hero-section {
+        background: url('https://i.pinimg.com/736x/ef/98/c6/ef98c6dd696241318ceacd271fea0552.jpg') center center / cover no-repeat;
+        height: 700px;
+        width: 100%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .text-title {
+        margin-bottom: 1rem;
+        z-index: 2;
+        color: white;
+        font-size: 3rem;
+        /* text-transform: capitalize; */
+    }
+    
+    .para-text {
+        font-size: 1.5rem;
+        color: white;
+        font-weight: bold;
+        z-index: 2;
+    }
+    
+    .btn {
+        margin-top: 1rem;
+        position: relative;
+    }
+    
+    .btn button {
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        background: dodgerblue;
+        padding: 1em 2em;
+        z-index: 3;
+        border-radius: 3rem;
+    }
+</style>
+
+<body>
+    <!-- .container>.overlay>header>nav.navbar>.logo{sky code}+ul.nav-list>li*3>a[href="#"]{home}>.btn-get>button{get Started}^.hero-section>h1.text-title{Welcome to sky code designer}+p{your one-stop solution for web design and development}+.btn>button{learn more} -->
+    <div class="container">
+        <div class="overlay">
+            <header>
+                <nav class="navbar">
+                    <div class="logo">sky code</div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#">home</a>
+                        </li>
+                        <li>
+                            <a href="#">about</a>
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                         <li>
+                            <a href="#">services</a>
+                        </li>
+                         <li>
+                            <a href="#">projects</a>
+                        </li>
+                    </ul>
+                    <div class="btn-get"><button>get Started</button></div>
+
+                </nav>
+            </header>
+
+            <div class="hero-section">
+                <h1 class="text-title">Welcome to sky code designer</h1>
+                <p class="para-text">your one-stop solution for web design and development</p>
+                <div class="btn"><button>learn more</button></div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
