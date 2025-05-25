@@ -126,6 +126,55 @@
       display: flex;
       justify-content: space-between;
     }
+    @media (max-width:768px) {
+      .navbar  .nav-list{
+            display: none;
+        }
+          .about-content{
+            flex-direction: column;
+            flex-wrap: wrap;
+          }
+           .about-img {
+    display: block;
+    max-width: 300px;
+    }
+    .about-img img{
+         border-radius: 10px;
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+           .features-services{
+            flex-direction: column;
+            flex-wrap: wrap;
+           }
+            .para-desc {
+      max-width: 500px;
+      /* padding: 1rem; */
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-family: 3.4rem;
+    }
+     .free-Ai {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      /* margin-right: 3rem; */
+    }
+    .free{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+      gap: 20px;
+    }
+    .free li{
+      margin: 0 3rem 0 ;
+
+    }
+      .offer-services{
+       flex-wrap: wrap;
+    }
+    }
     .about h1 {
       text-align: center;
       display: block;
@@ -207,10 +256,30 @@
     }
     .free-Ai {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
       padding: 10px;
-      margin-right: 3rem;
+      /* margin-right: 3rem; */
+    }
+    .free{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+      gap: 20px;
+    }
+    .free li{
+      margin: 0 3rem 0 ;
+
+    }
+    h3{
+        margin: 0.25rem 0.50rem 0;
+      
+      padding: 10px;
+      
+    }
+    .offer-services{
+        display: flex;
+        justify-content: space-between;
     }
   </style>
   <body>
@@ -267,7 +336,7 @@
             earum sunt velit veritatis quasi molestiae eaque. Facilis quasi
             iusto maxime!...
           </p>
-          <h2>We offer Free AI Tools</h2>
+          <h3>We offer Free AI Tools</h3>
           <div class="free-Ai">
             <ul class="free">
               <li>Content IDEA</li>
@@ -279,14 +348,16 @@
             <ul class="about-list">
               <li class="list-item-about">Text To speech</li>
               <li class="list-item-about">Ai Archive</li>
-              <li class="list-item-abou">Content IDEA</li>
+              <!-- <li class="list-item-abou">Content IDEA</li> -->
             </ul>
             <ul class="about-list">
-              <li class="list-item-about">Content IDEA</li>
               <li class="list-item-about">Chatgpt</li>
               <li class="list-item-about">Copy AI</li>
               <li class="list-item-about">SEMRUSH</li>
             </ul>
+             <ul class="about-list">
+              <li class="list-item-about">Text To speech</li>
+              <li class="list-item-about">Ai Archive</li>            </ul>
           </div>
         </div>
         <!-- <li><a href="#"> class="list-item-about"Read more</a></li> -->
