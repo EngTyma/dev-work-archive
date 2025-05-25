@@ -1,21 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>website</title>
-</head>
-<style>
+  </head>
+  <style>
     * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-    
+
     .container {
-        position: relative;
-        z-index: 1;
+      position: relative;
+      z-index: 1;
     }
     /* .overlay {
         content: "";
@@ -24,258 +23,314 @@
         background-color: rgba(0, 0, 0, 0.5);
     }
      */
-    
+
     .navbar {
-        display: flex;
-        justify-content: space-between;
-        padding: 1em;
-        background: #fff;
-        box-shadow: 0 4px 10px #ccc;
-        position: relative;
-        z-index: 3;
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      background: #fff;
+      box-shadow: 0 4px 10px #ccc;
+      position: relative;
+      z-index: 3;
     }
-    
+
     .navbar ul {
-        display: flex;
-        gap: 10px;
-        list-style-type: none;
+      display: flex;
+      gap: 10px;
+      list-style-type: none;
     }
-    
+
     .navbar li {
-        margin-right: 1rem;
+      margin-right: 1rem;
     }
-    
+
     .navbar a {
-        text-decoration: none;
-        text-transform: capitalize;
-        color: black;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: black;
     }
-    
+
     .navbar button {
-        text-transform: capitalize;
-        padding: 0.50em;
-        border: none;
-        color: white;
-        cursor: pointer;
-        background: orange;
+      text-transform: capitalize;
+      padding: 0.5em;
+      border: none;
+      color: white;
+      cursor: pointer;
+      background: orange;
     }
-    
+
     .container::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.5);
     }
 
-    .container::after{
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 80px;
-        background: #fff;
-        border-radius: 100% 100% 0 0;
+    .container::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: #fff;
+      border-radius: 100% 100% 0 0;
     }
-    
+
     .container .hero-section {
-        background: url('https://i.pinimg.com/736x/ef/98/c6/ef98c6dd696241318ceacd271fea0552.jpg') center center / cover no-repeat;
-        height: 700px;
-        width: 100%;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      background: url("https://i.pinimg.com/736x/ef/98/c6/ef98c6dd696241318ceacd271fea0552.jpg")
+        center center / cover no-repeat;
+      height: 700px;
+      width: 100%;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
-    
-    .text-title {
-        margin-bottom: 1rem;
-        z-index: 2;
-        color: white;
-        font-size: 3rem;
-        /* text-transform: capitalize; */
-    }
-    
-    .para-text {
-        font-size: 1.5rem;
-        color: white;
-        font-weight: bold;
-        z-index: 2;
-    }
-    
-    .btn {
-        margin-top: 1rem;
-        position: relative;
-    }
-    
-    .btn button {
-        border: none;
-        color: #fff;
-        cursor: pointer;
-        background: dodgerblue;
-        padding: 1em 2em;
-        z-index: 3;
-        border-radius: 3rem;
-    }
-    .about{
-        position: relative;
-        margin-top: 3rem;
-    }
-    .about-content{
-        display: flex;
-        justify-content: space-between;
 
+    .text-title {
+      margin-bottom: 1rem;
+      z-index: 2;
+      color: white;
+      font-size: 3rem;
+      /* text-transform: capitalize; */
     }
-.about h1{
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    border-bottom: 2px solid orange;
-    padding-bottom: .50rem;
-    width: fit-content;
-}
-.about-img{
-    margin-left: 5rem;
-    padding: 10px;
-    
-}
-img{
-    border-radius: 10px;
-    width: 480px;
-    height: 400px;
-    object-fit: cover;
-}
-.para-desc{
-    max-width: 1000px;
-    padding: 1rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-family: 3.4rem;
-}
-a{
-    color: black;
-}
-.services{
-    margin-top: 3rem;
-}
-.services .services-title{
-    text-align: center;
-    font-size: 1.5rem;
-    border-bottom: 2px solid gold;
-    display: block;
-    margin: 0 auto;
-    width: max-content;
-    font-family: papyrus;
-}
-.features-services{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    margin-top: 10px;
-    padding: 20px;
-}
-.content-services{
-    width: 400px;
-    height: 300px;
-    background: #fff;
-    box-shadow: 0 8px 10px #ccc;
-    text-align: center;
-}
-.content-services img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-.content-services p{
-    padding: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-</style>
-<body>
+
+    .para-text {
+      font-size: 1.5rem;
+      color: white;
+      font-weight: bold;
+      z-index: 2;
+    }
+
+    .btn {
+      margin-top: 1rem;
+      position: relative;
+    }
+
+    .btn button {
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      background: dodgerblue;
+      padding: 1em 2em;
+      z-index: 3;
+      border-radius: 3rem;
+    }
+    .about {
+      position: relative;
+      margin-top: 3rem;
+    }
+    .about-content {
+      display: flex;
+      justify-content: space-between;
+    }
+    .about h1 {
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 3rem;
+      border-bottom: 2px solid orange;
+      padding-bottom: 0.5rem;
+      width: fit-content;
+    }
+    .about-img {
+      margin-left: 5rem;
+      padding: 10px;
+    }
+    img {
+      border-radius: 10px;
+      width: 480px;
+      height: 400px;
+      object-fit: cover;
+    }
+    .para-desc {
+      max-width: 1000px;
+      padding: 1rem;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-family: 3.4rem;
+    }
+    a {
+      color: black;
+    }
+    .services {
+      margin-top: 3rem;
+    }
+    .services .services-title {
+      text-align: center;
+      font-size: 1.5rem;
+      border-bottom: 2px solid gold;
+      display: block;
+      margin: 0 auto;
+      width: max-content;
+      font-family: papyrus;
+    }
+    .features-services {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-top: 10px;
+      padding: 20px;
+    }
+    .content-services {
+      width: 400px;
+      height: 300px;
+      background: #fff;
+      box-shadow: 0 8px 10px #ccc;
+      text-align: center;
+    }
+    .content-services img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .content-services p {
+      padding: 10px;
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    .about-list {
+      list-style-type: none;
+      padding: 10px;
+    }
+    .about-list .list-item-about {
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .list-item-about::before {
+      content: "\2713";
+      width: 100px;
+      font-size: 16px;
+      margin-right: 0.5rem;
+    }
+    .free-Ai {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      margin-right: 3rem;
+    }
+  </style>
+  <body>
     <!-- .container>.overlay>header>nav.navbar>.logo{sky code}+ul.nav-list>li*3>a[href="#"]{home}>.btn-get>button{get Started}^.hero-section>h1.text-title{Welcome to sky code designer}+p{your one-stop solution for web design and development}+.btn>button{learn more} -->
     <div class="container">
-        <div class="overlay">
-            <header>
-                <nav class="navbar">
-                    <div class="logo">sky code</div>
-                    <ul class="nav-list">
-                        <li>
-                            <a href="#">home</a>
-                        </li>
-                        <li>
-                            <a href="#">about</a>
-                        </li>
-                        <li>
-                            <a href="#">contact</a>
-                        </li>
-                         <li>
-                            <a href="#">services</a>
-                        </li>
-                         <li>
-                            <a href="#">projects</a>
-                        </li>
-                    </ul>
-                    <div class="btn-get"><button>get Started</button></div>
-
-                </nav>
-            </header>
-            <div class="hero-section">
-                <h1 class="text-title">Welcome to sky code designer</h1>
-                <p class="para-text">your one-stop solution for web design and development</p>
-                <div class="btn"><button>learn more</button></div>
-            </div>
+      <div class="overlay">
+        <header>
+          <nav class="navbar">
+            <div class="logo">sky code</div>
+            <ul class="nav-list">
+              <li>
+                <a href="#">home</a>
+              </li>
+              <li>
+                <a href="#">about</a>
+              </li>
+              <li>
+                <a href="#">contact</a>
+              </li>
+              <li>
+                <a href="#">services</a>
+              </li>
+              <li>
+                <a href="#">projects</a>
+              </li>
+            </ul>
+            <div class="btn-get"><button>get Started</button></div>
+          </nav>
+        </header>
+        <div class="hero-section">
+          <h1 class="text-title">Welcome to sky code designer</h1>
+          <p class="para-text">
+            your one-stop solution for web design and development
+          </p>
+          <div class="btn"><button>learn more</button></div>
         </div>
+      </div>
     </div>
     <!-- about us section -->
     <section class="about">
-            <h1>About us</h1>
-     <div class="about-content">
-           <div class="about-img">
-            <img src="https://i.pinimg.com/736x/cd/b2/2f/cdb22f16d269a818adca408511adc0f1.jpg" alt="..">
-            <!-- <img src="https://i.pinimg.com/736x/c9/51/85/c95185a66eed2e6f800c3f04e9e8cc5d.jpg" alt="..."> -->
+      <h1>About us</h1>
+      <div class="about-content">
+        <div class="about-img">
+          <img
+            src="https://i.pinimg.com/736x/cd/b2/2f/cdb22f16d269a818adca408511adc0f1.jpg"
+            alt=".."
+          />
+          <!-- <img src="https://i.pinimg.com/736x/c9/51/85/c95185a66eed2e6f800c3f04e9e8cc5d.jpg" alt="..."> -->
         </div>
-        <div class="about-description">
-            <p class="para-desc">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatibus ad dolorum, velit harum ut vero aspernatur ipsam est deleniti natus quidem, magnam enim architecto reprehenderit officia neque consequatur qui.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quas eius! Asperiores corrupti quidem, quas quia veritatis obcaecati in vero quam quibusdam recusandae illum tenetur nam accusantium eos. Minus impedit sequi rerum magnam vel debitis tempora ipsa nam quia. Voluptatum, molestiae minima obcaecati nostrum illo dignissimos sint eligendi pariatur excepturi libero reiciendis quia ratione ut iusto non aliquam esse beatae ipsa magnam! Fuga vero, inventore reprehenderit voluptatem, similique molestiae dolor accusamus deleniti quod aliquid labore quisquam, laborum repudiandae ex? Reprehenderit accusamus, ullam est placeat necessitatibus voluptates soluta in eos libero suscipit quaerat facilis recusandae ipsam maiores incidunt nulla modi ducimus.
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, quas eius! Asperiores corrupti quidem, quas quia veritatis obcaecati in vero quam quibusdam recusandae illum tenetur nam accusantium eos. Minus impedit sequi rerum magnam vel debitis tempora ipsa nam quia. Voluptatum, molestiae minima obcaecati nostrum illo dignissimos sint eligendi pariatur excepturi libero reiciendis quia ratione ut iusto non aliquam esse beatae ipsa magnam! Fuga vero, inventore reprehenderit voluptatem, similique molestiae dolor accusamus deleniti quod aliquid labore quisquam, laborum repudiandae ex? Reprehenderit accusamus, ullam est placeat necessitatibus voluptates soluta in eos libero suscipit quaerat facilis recusandae ipsam maiores incidunt nulla modi ducimus.
-       
-                <a href="#">Read more</a>
-
-            </p>
+        <div class="para-desc">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, a
+            neque. A beatae adipisci, quidem libero officiis excepturi. Debitis,
+            earum sunt velit veritatis quasi molestiae eaque. Facilis quasi
+            iusto maxime!...
+          </p>
+          <h2>We offer Free AI Tools</h2>
+          <div class="free-Ai">
+            <ul class="free">
+              <li>Content IDEA</li>
+              <li>Designing</li>
+              <li>Video Editing</li>
+            </ul>
+          </div>
+          <div class="offer-services">
+            <ul class="about-list">
+              <li class="list-item-about">Text To speech</li>
+              <li class="list-item-about">Ai Archive</li>
+              <li class="list-item-abou">Content IDEA</li>
+            </ul>
+            <ul class="about-list">
+              <li class="list-item-about">Content IDEA</li>
+              <li class="list-item-about">Chatgpt</li>
+              <li class="list-item-about">Copy AI</li>
+              <li class="list-item-about">SEMRUSH</li>
+            </ul>
+          </div>
         </div>
-     </div>
+        <!-- <li><a href="#"> class="list-item-about"Read more</a></li> -->
+      </div>
     </section>
     <section class="services">
-        <h1 class="services-title">Our Services</h1>
-        <div class="features-services">
-            <div class="content-services">
-                <img src="https://i.pinimg.com/736x/31/1d/4f/311d4fed164a6d73164012b7946d3752.jpg" alt="..">
-                <h1>Text to Speech</h1>
-                <p>Unlimited VOICE Options in This Text to Speech. Repudiandae, provident.</p>
-            </div>
-            <!-- item 2  -->
-                <div class="content-services">
-                <img src="https://i.pinimg.com/736x/19/44/d8/1944d8902e84ec9575931ef57e19042f.jpg" alt="..">
-                <h1>Ai Archive</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, provident.</p>
-            </div>
-
-            <!-- item 3 -->
-                <div class="content-services">
-                <img src="https://i.pinimg.com/736x/10/c3/6f/10c36f32ed1c7d158ac487e1249d4bb3.jpg" alt="..">
-                <h1>AI Voice: Super Realistic!</h1>
-                <p>📈 AFFILIATE MARKETING FOR SUCCESS | Repudiandae, provident.</p>
-            </div>
+      <h1 class="services-title">Our Services</h1>
+      <div class="features-services">
+        <div class="content-services">
+          <img
+            src="https://i.pinimg.com/736x/31/1d/4f/311d4fed164a6d73164012b7946d3752.jpg"
+            alt=".."
+          />
+          <h1>Text to Speech</h1>
+          <p>
+            Unlimited VOICE Options in This Text to Speech. Repudiandae,
+            provident.
+          </p>
         </div>
+        <!-- item 2  -->
+        <div class="content-services">
+          <img
+            src="https://i.pinimg.com/736x/19/44/d8/1944d8902e84ec9575931ef57e19042f.jpg"
+            alt=".."
+          />
+          <h1>Ai Archive</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repudiandae, provident.
+          </p>
+        </div>
+
+        <!-- item 3 -->
+        <div class="content-services">
+          <img
+            src="https://i.pinimg.com/736x/10/c3/6f/10c36f32ed1c7d158ac487e1249d4bb3.jpg"
+            alt=".."
+          />
+          <h1>AI Voice: Super Realistic!</h1>
+          <p>📈 AFFILIATE MARKETING FOR SUCCESS | Repudiandae, provident.</p>
+        </div>
+      </div>
     </section>
 
-    <section class="Contact">
-        
-    </section>
-
-</body>
-
+    <section class="Contact"></section>
+  </body>
 </html>
