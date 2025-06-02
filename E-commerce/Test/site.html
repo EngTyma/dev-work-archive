@@ -1,369 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Website</title>
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        font-family: Arial, sans-serif;
-      }
-
-      .container {
-        position: relative;
-        z-index: 1;
-      }
-
-      .container::before {
-        content: "";
-        position: absolute;
-        inset: 0;
-        background-color: rgba(0, 0, 0, 0.5);
-      }
-
-      .container::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 80px;
-        background: #fff;
-        border-radius: 100% 100% 0 0;
-      }
-
-      /* NAVBAR */
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1em;
-        background: #fff;
-        box-shadow: 0 4px 10px #ccc;
-        position: relative;
-        z-index: 3;
-      }
-
-      .logo {
-        font-weight: bold;
-        font-size: 1.2rem;
-      }
-
-      .nav-list {
-        display: flex;
-        list-style-type: none;
-        gap: 1rem;
-      }
-
-      .nav-list li a {
-        text-decoration: none;
-        color: black;
-        text-transform: capitalize;
-      }
-
-      .btn-get button {
-        text-transform: capitalize;
-        padding: 0.5em 1em;
-        border: none;
-        background: orange;
-        color: white;
-        cursor: pointer;
-        border-radius: 5px;
-      }
-
-      /* HERO SECTION */
-      .hero-section {
-        background: url("https://i.pinimg.com/736x/ef/98/c6/ef98c6dd696241318ceacd271fea0552.jpg")
-          center center / cover no-repeat;
-        height: 700px;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: white;
-        position: relative;
-        z-index: 2;
-        padding: 1rem;
-      }
-
-      .text-title {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-      }
-
-      .para-text {
-        font-size: 1.2rem;
-        font-weight: bold;
-      }
-
-      .btn button {
-        margin-top: 1rem;
-        padding: 0.8em 2em;
-        border: none;
-        background: dodgerblue;
-        color: white;
-        border-radius: 30px;
-        cursor: pointer;
-      }
-
-      /* ABOUT SECTION */
-      .about {
-        padding: 2rem 1rem;
-      }
-
-      .about h1 {
-        text-align: center;
-        margin-bottom: 2rem;
-        border-bottom: 2px solid orange;
-        width: fit-content;
-        margin-inline: auto;
-      }
-
-      .about-content {
-        display: flex;
-        justify-content: space-between;
-        gap: 2rem;
-        flex-wrap: wrap;
-      }
-
-      .about-img {
-        flex: 1;
-        max-width: 400px;
-        margin: 0 auto;
-      }
-
-      .about-img img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }
-
-      .para-desc {
-        flex: 2;
-        font-size: 1rem;
-        line-height: 1.6;
-      }
-
-      .free-Ai {
-        margin-top: 1rem;
-      }
-
-      .free {
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        padding: 0;
-      }
-
-      .free li {
-        background: #f5f5f5;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-      }
-
-      .offer-services {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        margin-top: 1rem;
-      }
-
-      .about-list {
-        list-style: none;
-        padding: 0;
-      }
-
-      .list-item-about::before {
-        content: "✓ ";
-        color: green;
-      }
-
-      /* SERVICES SECTION */
-      .services {
-        padding: 2rem 1rem;
-      }
-
-      .services-title {
-        text-align: center;
-        font-size: 1.8rem;
-        border-bottom: 2px solid gold;
-        display: inline-block;
-        margin-bottom: 2rem;
-      }
-
-      .features-services {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        justify-content: center;
-      }
-
-      .content-services {
-        background: #fff;
-        box-shadow: 0 8px 10px #ccc;
-        width: 100%;
-        max-width: 320px;
-        text-align: center;
-        border-radius: 10px;
-        overflow: hidden;
-      }
-
-      .content-services img {
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-      }
-
-      .content-services h1 {
-        font-size: 1.2rem;
-        margin: 0.5rem 0;
-      }
-
-      .content-services p {
-        padding: 0 1rem 1rem;
-        font-size: 0.95rem;
-      }
-
-      /* RESPONSIVE DESIGN */
-      @media (max-width: 768px) {
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .container {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .container::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .container::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 80px;
+            background: #fff;
+            border-radius: 100% 100% 0 0;
+        }
+        /* NAVBAR */
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em;
+            background: #fff;
+            box-shadow: 0 4px 10px #ccc;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
         .nav-list {
-          display: none;
+            display: flex;
+            list-style-type: none;
+            gap: 1rem;
         }
-
-        .about-content {
-          flex-direction: column;
-          align-items: center;
+        
+        .nav-list li a {
+            text-decoration: none;
+            color: black;
+            text-transform: capitalize;
         }
-
-        .features-services {
-          flex-direction: column;
+        
+        .btn-get button {
+            text-transform: capitalize;
+            padding: 0.5em 1em;
+            border: none;
+            background: orange;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
         }
-
+        /* HERO SECTION */
+        
+        .hero-section {
+            background: url("https://i.pinimg.com/736x/ef/98/c6/ef98c6dd696241318ceacd271fea0552.jpg") center center / cover no-repeat;
+            height: 700px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            z-index: 2;
+            padding: 1rem;
+        }
+        
         .text-title {
-          font-size: 2rem;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
-
+        
         .para-text {
-          font-size: 1rem;
+            font-size: 1.2rem;
+            font-weight: bold;
         }
-      }
+        
+        .btn button {
+            margin-top: 1rem;
+            padding: 0.8em 2em;
+            border: none;
+            background: dodgerblue;
+            color: white;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+        /* ABOUT SECTION */
+        
+        .about {
+            padding: 2rem 1rem;
+        }
+        
+        .about h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid orange;
+            width: fit-content;
+            margin-inline: auto;
+        }
+        
+        .about-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .about-img {
+            flex: 1;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        
+        .para-desc {
+            flex: 2;
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .free-Ai {
+            margin-top: 1rem;
+        }
+        
+        .free {
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding: 0;
+        }
+        
+        .free li {
+            background: #f5f5f5;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+        
+        .offer-services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .about-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .list-item-about::before {
+            content: "✓ ";
+            color: green;
+        }
+        /* SERVICES SECTION */
+        
+        .services {
+            padding: 2rem 1rem;
+        }
+        
+        .services-title {
+            text-align: center;
+            font-size: 1.8rem;
+            border-bottom: 2px solid gold;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+        
+        .features-services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+        }
+        
+        .content-services {
+            background: #fff;
+            box-shadow: 0 8px 10px #ccc;
+            width: 100%;
+            max-width: 320px;
+            text-align: center;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        
+        .content-services img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .content-services h1 {
+            font-size: 1.2rem;
+            margin: 0.5rem 0;
+        }
+        
+        .content-services p {
+            padding: 0 1rem 1rem;
+            font-size: 0.95rem;
+        }
+        /* RESPONSIVE DESIGN */
+        
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+            }
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+            .features-services {
+                flex-direction: column;
+            }
+            .text-title {
+                font-size: 2rem;
+            }
+            .para-text {
+                font-size: 1rem;
+            }
+        }
     </style>
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <nav class="navbar">
-          <div class="logo">sky code</div>
-          <ul class="nav-list">
-            <li><a href="#">home</a></li>
-            <li><a href="#">about</a></li>
-            <li><a href="#">contact</a></li>
-            <li><a href="#">services</a></li>
-            <li><a href="#">projects</a></li>
-          </ul>
-          <div class="btn-get"><button>get Started</button></div>
-        </nav>
-      </header>
+</head>
 
-      <div class="hero-section">
-        <h1 class="text-title">Welcome to sky code designer</h1>
-        <p class="para-text">
-          your one-stop solution for web design and development
-        </p>
-        <div class="btn"><button>learn more</button></div>
-      </div>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar">
+                <div class="logo">sky code</div>
+                <ul class="nav-list">
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">projects</a></li>
+                </ul>
+                <div class="btn-get"><button>get Started</button></div>
+            </nav>
+        </header>
+
+        <div class="hero-section">
+            <h1 class="text-title">Welcome to sky code designer</h1>
+            <p class="para-text">
+                your one-stop solution for web design and development
+            </p>
+            <div class="btn"><button>learn more</button></div>
+        </div>
     </div>
 
     <!-- About Section -->
     <section class="about">
-      <h1>About Us</h1>
-      <div class="about-content">
-        <div class="about-img">
-          <img
-            src="https://i.pinimg.com/736x/cd/b2/2f/cdb22f16d269a818adca408511adc0f1.jpg"
-            alt="About"
-          />
+        <h1>About Us</h1>
+        <div class="about-content">
+            <div class="about-img">
+                <img src="https://i.pinimg.com/736x/cd/b2/2f/cdb22f16d269a818adca408511adc0f1.jpg" alt="About" />
+            </div>
+            <div class="para-desc">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur neque libero officiis excepturi! Debitis, earum sunt velit veritatis quasi molestiae eaque.
+                </p>
+                <h3>We offer Free AI Tools</h3>
+                <div class="free-Ai">
+                    <ul class="free">
+                        <li>Content IDEA</li>
+                        <li>Designing</li>
+                        <li>Video Editing</li>
+                    </ul>
+                </div>
+                <div class="offer-services">
+                    <ul class="about-list">
+                        <li class="list-item-about">Text To Speech</li>
+                        <li class="list-item-about">AI Archive</li>
+                    </ul>
+                    <ul class="about-list">
+                        <li class="list-item-about">ChatGPT</li>
+                        <li class="list-item-about">Copy AI</li>
+                        <li class="list-item-about">SEMRUSH</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="para-desc">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
-            neque libero officiis excepturi! Debitis, earum sunt velit veritatis
-            quasi molestiae eaque.
-          </p>
-          <h3>We offer Free AI Tools</h3>
-          <div class="free-Ai">
-            <ul class="free">
-              <li>Content IDEA</li>
-              <li>Designing</li>
-              <li>Video Editing</li>
-            </ul>
-          </div>
-          <div class="offer-services">
-            <ul class="about-list">
-              <li class="list-item-about">Text To Speech</li>
-              <li class="list-item-about">AI Archive</li>
-            </ul>
-            <ul class="about-list">
-              <li class="list-item-about">ChatGPT</li>
-              <li class="list-item-about">Copy AI</li>
-              <li class="list-item-about">SEMRUSH</li>
-            </ul>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- Services -->
-    
+
 
     <section class="services">
-      <h1 class="services-title">Our Services</h1>
-      <div class="features-services">
-        <div class="content-services">
-          <img
-            src="https://i.pinimg.com/736x/31/1d/4f/311d4fed164a6d73164012b7946d3752.jpg"
-            alt=".."
-          />
-          <h1>Text to Speech</h1>
-          <p>
-            Unlimited VOICE Options in This Text to Speech. Repudiandae,
-            provident.
-          </p>
-        </div>
-        <!-- item 2  -->
-        <div class="content-services">
-          <img
-            src="https://i.pinimg.com/736x/19/44/d8/1944d8902e84ec9575931ef57e19042f.jpg"
-            alt=".."
-          />
-          <h1>Ai Archive</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repudiandae, provident.
-          </p>
-        </div>
+        <h1 class="services-title">Our Services</h1>
+        <div class="features-services">
+            <div class="content-services">
+                <img src="https://i.pinimg.com/736x/31/1d/4f/311d4fed164a6d73164012b7946d3752.jpg" alt=".." />
+                <h1>Text to Speech</h1>
+                <p>
+                    Unlimited VOICE Options in This Text to Speech. Repudiandae, provident.
+                </p>
+            </div>
+            <!-- item 2  -->
+            <div class="content-services">
+                <img src="https://i.pinimg.com/736x/19/44/d8/1944d8902e84ec9575931ef57e19042f.jpg" alt=".." />
+                <h1>Ai Archive</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, provident.
+                </p>
+            </div>
 
-        <!-- item 3 -->
-        <div class="content-services">
-          <img
-            src="https://i.pinimg.com/736x/10/c3/6f/10c36f32ed1c7d158ac487e1249d4bb3.jpg"
-            alt=".."
-          />
-          <h1>AI Voice: Super Realistic!</h1>
-          <p>📈AFFILIATE MARKETING FOR SUCCESS | Repudiandae, provident.</p>
+            <!-- item 3 -->
+            <div class="content-services">
+                <img src="https://i.pinimg.com/736x/10/c3/6f/10c36f32ed1c7d158ac487e1249d4bb3.jpg" alt=".." />
+                <h1>AI Voice: Super Realistic!</h1>
+                <p>📈AFFILIATE MARKETING FOR SUCCESS | Repudiandae, provident.</p>
+            </div>
         </div>
-      </div>
     </section>
 
-    <section class="Contact"></section>
-  </body>
+    <section class="Contact">
+        <h1>contact us</h1>
+    </section>
+</body>
+
 </html>
