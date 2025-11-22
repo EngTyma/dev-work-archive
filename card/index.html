@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Stylish profile card with a hover effect || Tailwindcss</title>
+</head>
+
+<body>
+    <div class="container flex justify-center items-center h-screen gap-4 mx-auto">
+        <div class="bg-white w-full sm:w-2/3 lg-w-1/3 md:w-1/3 mx-auto shadow-xl hover:shadow-indigo-400 rounded">
+            <img src="https://images.unsplash.com/photo-1557862921-37829c790f19?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHx1c2VyfGVufDB8MHx8fDE2OTQwOTU5Nzl8MA&ixlib=rb-4.0.3&q=80&w=1080" class="h-75 w-full object-cover" alt="profile img.."
+            />
+            <div class="px-10 py-3 mb-4">
+                <h1>John Doe</h1>
+                <p>Front-End Developer</p>
+                <div class="flex items-center space-x-3 py-5">
+                    <span class="p-2 bg-green-300 rounded">Web</span>
+                    <span class="p-2 bg-indigo-400 rounded">UI/UX</span>
+                    <span class="p-2 bg-purple-400 rounded">Design</span>
+                </div>
+                <a href="#" class="text-blue-400">View Profile</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
