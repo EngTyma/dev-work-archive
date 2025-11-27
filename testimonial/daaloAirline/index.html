@@ -1,106 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>daalo airline</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
+</head>
 
-  <body>
+<body>
     <!-- /* daalo airline */ -->
     <nav class="py-10 ms-auto border-b-[#ccc] shadow">
-      <div class="bg-white flex justify-between items-center max-w-7xl">
-        <!-- /* logo deign */ -->
-        <div class="flex items-center">
-          <i
-            class="bi bi-airplane-fill text-2xl ms-5 rotate-[90deg] text-blue-500"
-          ></i>
-          <a
-            href="#"
-            class="hidden sm:block text-xl text-start ms-1 font-semibold"
-          >
-            <span>daalo airline</span>
-          </a>
-        </div>
-        <!-- nav items -->
-        <div class="text-center">
-          <a
-            href="#"
-            class="capitalize mx-2 cursor-pointer text-xl hover:text-blue-500"
-          >
+        <div class="bg-white flex justify-between items-center max-w-7xl">
+            <!-- /* logo deign */ -->
+            <div class="flex items-center">
+                <i class="bi bi-airplane-fill text-2xl ms-5 rotate-[90deg] text-blue-500"></i>
+                <a href="#" class="hidden sm:block text-xl text-start ms-1 font-semibold">
+                    <span>daalo airline</span>
+                </a>
+            </div>
+            <!-- nav items -->
+            <div class="text-center">
+                <a href="#" class="capitalize sm:mx-2 cursor-pointer text-xl hover:text-blue-500">
             home
           </a>
-          <a
-            href="#"
-            class="capitalize mx-2 cursor-pointer text-xl hover:text-blue-500"
-          >
+                <a href="#" class="capitalize sm:mx-2 cursor-pointer text-xl hover:text-blue-500">
             flight
           </a>
-          <a
-            href="#"
-            class="capitalize mx-2 cursor-pointer text-xl hover:text-blue-500"
-          >
+                <a href="#" class="capitalize sm:mx-2 cursor-pointer text-xl hover:text-blue-500">
             hotels
           </a>
-          <a
-            href="#"
-            class="capitalize mx-2 cursor-pointer text-xl hover:text-blue-500"
-          >
+                <a href="#" class="capitalize sm:mx-2 cursor-pointer text-xl hover:text-blue-500">
             packages
           </a>
-          <a
-            href="#"
-            class="capitalize mx-2 cursor-pointer text-xl hover:text-blue-500"
-          >
+                <a href="#" class="capitalize sm:mx-2 cursor-pointer text-xl hover:text-blue-500">
             deals
           </a>
-        </div>
-        <div class="flex items-center mx-2 space-x-5">
-          <i class="bi bi-person-circle text-blue-500 cursor-pointer"></i>
-          <button
-            class="cursor-pointer rounded py-2 px-4 bg-blue-500 text-white"
-          >
+            </div>
+            <div class="hidden sm:block flex items-center sm:mx-2 space-x-5">
+                <i class="bi bi-person-circle text-blue-500 cursor-pointer"></i>
+                <button class="cursor-pointer rounded py-2 px-4 bg-blue-500 text-white">
             Sign in
           </button>
+            </div>
         </div>
-      </div>
     </nav>
 
     <!-- /* hero section */ -->
     <section class="ms-auto">
-      <div class="relative w-full">
-        <video
-          src="img/video-bg.mp4"
-          class="absolute w-full object-cover"
-          autoplay
-          loop
-          muted
-          playsinline
-        ></video>
-        <!-- Overlay (dark layer for text readability) -->
-        <div class="absolute w-full h-full bg-black/50 h-screen"></div>
-        <div
-          class="relative z-10 flex flex-col items-center justify-center py-20 h-full text-center text-white px-10"
-        >
-          <h1 class="text-5xl text-center mb-4">Find Your Perfect Flight</h1>
-          <p class="text-2xl">
-            Discover amazing destinations at the best prices with Daalo airline
-          </p>
-          <div>
-            <form action="#">
-              <div>
-                <label>From</label>
-                <input type="text" />
-              </div>
-            </form>
-          </div>
+        <div class="relative w-full h-screen">
+            <video src="img/video-bg.mp4" class="absolute w-full object-cover" autoplay loop muted playsinline></video>
+            <!-- Overlay -->
+            <div class="absolute  inset-0  bg-black/50  "></div>
+            <!-- /* text contact */ -->
+            <div class="relative z-10 flex flex-col items-center justify-center sm:py-20 h-65  text-center text-white px-10">
+                <h1 class="text-2xl sm:text-5xl text-center mb-4">
+                    Find Your Perfect Flight
+                </h1>
+                <p class="text-2xl">
+                    Discover amazing destinations at the best prices with Daalo airline
+                </p>
+            </div>
         </div>
-      </div>
     </section>
-  </body>
+
+    <!-- /* The world is yours o discover */ -->
+    <section class="bg-white py-20">
+        <!-- <h1>The world is yours To discover</h1> -->
+        <h1 class="text-lg  text-center">Why Choose Daalo Airline</h1>
+        <div class="block sm:flex justify-center mb-10 px-10 mx-auto gap-6 items-center mt-10">
+            <!-- reason 1 -->
+            <div class="bg-white  p-4  text-center hover:shadow-lg rounded">
+                <h1>Affordable Prices</h1>
+                <p>
+                    We offer great prices that everyone can afford, so you can travel without overspending.
+                </p>
+            </div>
+
+            <!-- /* reason 2 */ -->
+            <div class="bg-white  p-4 text-center hover:shadow-lg rounded">
+                <h1>Reliable Flights
+
+                    <p>Our flights are consistent and dependable, ensuring you reach your destination on time</h1>
+                </p>
+            </div>
+            <!-- /* reason 3 */ -->
+            <div class="bg-white  p-4 text-center hover:shadow-lg rounded">
+                <h1>Friendly Customer Service</h1>
+                <p>Our customer service team is friendly, responsive, and always ready to assist you.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- /* popular destination */ -->
+
+    <section>
+        <div class="text-center mx-auto">
+            <h1 class="text-3xl">popular destination</h1>
+            <p>The world is yours to discover</p>
+        </div>
+
+        <!-- /* grid section */ -->
+
+        <div class="container max-w-7xl m-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2">
+
+                <!-- /* left grid section */ -->
+                <div class="grid row-1 gap-2 ">
+                    <div class="p-2 bg-white border-[#ccc] rounded">
+                        <img src="https://media.istockphoto.com/id/2165274590/photo/old-war-memorial-with-soviet-jet-fighter-and-modern-buildings-in-the-downtown-streets-of.jpg?s=612x612&w=0&k=20&c=xbNIO6E79Xb7CImwThobr5zcVIWpKiDgM87RsAWWUc8=" class="w-full h-full object-cover"
+                            alt="hargeisa">
+                        <h5 class="card-title fw-bold">mogadishu ⇌ hargeisa</h5>
+                        <p>Available every st & Sun</p>
+                        <div class="flex justify-between px-3">
+                            <span class="font-semibold">$400</span>
+                            <button class="border-blue-500 py-2 px-4 hover:bg-blue-500 text-white rounded">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- /* right grid section */ -->
+                <div class="border-[#ccc] rounded p-4">
+                    <img src="" alt="">
+                    <h5>mogadishu ⇌ bosaso</h5>
+                </div>
+
+                <!-- /* right 2 */ -->
+
+
+                <div class="border-[#ccc] rounded p-4">
+
+                </div>
+
+                <!-- /* right 3 */ -->
+
+
+                <div class="border-[#ccc] rounded p-4">
+
+                </div>
+
+                <!-- /* right 4 */ -->
+
+                <div class="border-[#ccc] rounded p-4">
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+
 </html>
