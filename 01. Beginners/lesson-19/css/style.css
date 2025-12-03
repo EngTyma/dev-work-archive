@@ -1,5 +1,0 @@
-/* CSS is Function */
-
-header:is(h2) {
-    color: red;
-}
