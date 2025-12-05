@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <div
+      class="w-full h-screen bg-gradient-to-r from-green-300 via-green-400 to-green-500"
+    >
+      <div class="flex items-center justify-center h-full">
+        <div
+          class="w-[400px] bg-white/40 backdrop-blur-md py-6 px-4 shadow-2xl rounded-2xl"
+        >
+          <h1 class="text-center mb-6 text-2xl font-semibold">
+            Temperature Converter
+          </h1>
+
+          <div class="mb-4">
+            <label class="block mb-2 text-lg">Celsius:</label>
+            <input
+              type="text"
+              id="enterTemparture"
+              class="w-full py-2 px-3 bg-white/60 shadow-inner rounded-lg outline-none border border-gray-300/50"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label class="block mb-2 text-lg">Fahrenheit:</label>
+            <input
+              type="text"
+              id="Fahrenheit"
+              class="w-full py-2 px-3 bg-white/60 shadow-inner rounded-lg outline-none border border-gray-300/50"
+            />
+          </div>
+
+          <div class="mb-4">
+            <label class="block mb-2 text-lg">Kelvin:</label>
+            <input
+              type="text"
+              id="Kelvin"
+              class="w-full py-2 px-3 bg-white/60 shadow-inner rounded-lg outline-none border border-gray-300/50"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const enterTemparture = document.getElementById("enterTemparture"),
+        Fahrenheit = document.getElementById("Fahrenheit"),
+        Kelvin = document.getElementById("Kelvin");
+      enterTemparture.addEventListener("input", () => {
+        // /* 🔥 1. Celsius → Kelvin */
+        const c = parseFloat(enterTemparture.value);
+        if (isNaN(c)) {
+          Fahrenheit.value = "";
+          Kelvin.value = "";
+          return;
+        }
+        Kelvin.value = c + 273.15;
+        // 🔥 2. Celsius → Fahrenheit
+        Fahrenheit.value = (c * 9) / 5 + 32;
+      });
+    </script>
+  </body>
+</html>
