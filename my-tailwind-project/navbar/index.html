@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>navbar</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="py-10 bg-gray-300">
+          <div class="max-w-7xl mx-auto">
+            <div class="flex items-center justify-between gap-10">
+              <div class="px-4 text-3xl">
+                Korodhso
+                <span class="text-green-800">Aqoon</span>
+              </div>
+
+              <!-- Mobile button -->
+              <button id="active" class="text-3xl cursor-pointer md:hidden">
+                <i class="bi bi-list"></i>
+              </button>
+
+              <!-- Desktop menu -->
+              <div class="hidden md:block px-4">
+                <ul class="flex items-center gap-6 capitalize list-none">
+                  <li><a href="#">home</a></li>
+                  <li><a href="#">courses</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">contact</a></li>
+                  <li>
+                    <a href="#" class="bg-green-900 text-white px-4 py-2">
+                      Account
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile navbar -->
+    <nav class="navbar hidden">
+      <div class="bg-white md:hidden shadow py-10 border-t border-gray-400">
+        <div class="max-w-7xl mx-auto">
+          <div class="px-4">
+            <ul class="flex flex-col items-start gap-6 capitalize list-none">
+              <li><a href="#">home</a></li>
+              <li><a href="#">courses</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">contact</a></li>
+              <li>
+                <a href="#" class="bg-green-900 text-white px-4 py-2">
+                  Account
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <script defer src="script.js"></script>
+  </body>
+</html>

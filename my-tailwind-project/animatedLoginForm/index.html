@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animated Login Form</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style>
+      /* Each letter */
+
+      .form-control span {
+        display: inline-block;
+        transition: 0.3s ease;
+      }
+      /* Move letters up when input is focused */
+
+      input:focus + label span,
+      input:not(:placeholder-shown) + label span {
+        transform: translateY(-25px);
+        color: #fff;
+      }
+    </style>
+  </head>
+
+  <body class="bg-green-800 flex items-center justify-center h-screen">
+    <div class="bg-white/20 backdrop-blur-xl w-72 p-6 rounded-xl shadow-xl">
+      <h1 class="text-center text-2xl text-white mb-6">Login Form</h1>
+
+      <form>
+        <!-- EMAIL -->
+        <div class="relative mb-8">
+          <input
+            type="email"
+            id="emailInput"
+            placeholder=" "
+            class="w-full py-2 bg-transparent outline-none border-b border-gray-300 text-white"
+          />
+          <label
+            class="form-control absolute left-0 top-2 text-gray-300 pointer-events-none"
+          >
+            Email
+          </label>
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="relative mb-8">
+          <input
+            type="password"
+            id="passwordInput"
+            placeholder=" "
+            class="w-full py-2 bg-transparent outline-none border-b border-gray-300 text-white"
+          />
+          <label
+            class="form-control absolute left-0 top-2 text-gray-300 pointer-events-none"
+          >
+            Password
+          </label>
+        </div>
+
+        <!-- BUTTON -->
+        <button
+          class="bg-blue-500 w-full py-2 rounded text-white text-xl cursor-pointer"
+        >
+          Login
+        </button>
+
+        <p class="text-white mt-2 text-sm">
+          Don't have an account?
+          <a href="#" class="text-blue-300 underline">Register</a>
+        </p>
+      </form>
+    </div>
+
+    <script defer src="script.js"></script>
+  </body>
+</html>
