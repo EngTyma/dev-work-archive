@@ -1,0 +1,109 @@
+:root{
+    --color1: steelblue;
+    --color2: rgba(0,0,0, 0.4);
+    --color3 : lightblue;
+
+}
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    background-color: var(--color1);
+    color: white;
+}
+
+
+.container{
+    background-color: var(--color2);
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    color: var(--color3);
+}
+
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+
+}
+
+.form-control input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    color: white;
+}
+
+
+.form-control input:focus{
+    outline: none;
+}
+
+.btn{
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--color3);
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+.text{
+    margin-top: 30px;
+}
+
+.form-control label{
+    position: absolute;
+    top: -10px;
+
+}
+
+
+.myProgress{
+    width: 100%;
+    background-color: gray;
+    border-radius: 5px;
+    position: relative;
+}
+
+.myBar{
+    width: 0%;
+    background-color:green;
+    height: 15px;
+  
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.message{
+    position: absolute;
+    top: 0;
+    font-size: 12px;
+    left: 70px;
+}
