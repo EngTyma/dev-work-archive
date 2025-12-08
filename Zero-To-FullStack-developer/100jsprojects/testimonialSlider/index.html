@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial Slider</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <div id="container" class="container"></div>
+
+    <div id="template" class="flex items-center justify-center h-screen">
+        <div class="mx-auto relative max-w-7xl">
+            <div class="bg-purple-500 w-[550px] h-50 shadow-xl rounded py-4">
+                <!-- /* profile img */ -->
+                <div id="profileImg" class="absolute -top-10 left-[50%] -translate-x-[50%]">
+                    <img src="https://i.pinimg.com/736x/7e/46/c6/7e46c6d2798eff446b365c5246f4c9ca.jpg" class="w-24 h-24 object-cover rounded-full" alt="" />
+                </div>
+                <!-- /* end profile */ -->
+                <div class="py-20 px-3">
+                    <p id="para" class="text-white">
+                        I would also like to say thank you to all your staff. Wow what great service, I love it! Apple impressed me on multiple levels.
+                    </p>
+                    <span id="authorName" class="text-white font-semibold my-2">
+              Rosetta Q
+            </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
