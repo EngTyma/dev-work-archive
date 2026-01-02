@@ -9,6 +9,7 @@ btnCal.addEventListener("click", () => {
         resultTotal.innerText = "enter valid value";
         return;
     }
+    
     if (billValue < 0 || tipValue < 0) {
         resultTotal.textContent = "value can't be negative";
         return;
@@ -16,4 +17,5 @@ btnCal.addEventListener("click", () => {
     const totalValue = billValue * (1 + tipValue / 100);
     resultTotal.textContent = totalValue.toFixed(2);
     return;
+
 });
