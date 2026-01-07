@@ -1,8 +1,6 @@
 const result = document.getElementById("result");
 const buttons = document.querySelectorAll("button");
-
 /* marka hore waxan looping ku samenaya dhaman buttons ka si midba mar laygu so aqriya */
-
 buttons.forEach((btn) => {
   btn.addEventListener("click", () => {
     /* button kasta aan click dhaha kasa extra white space ka wuu wato */
@@ -30,3 +28,4 @@ buttons.forEach((btn) => {
     result.value += value;
   });
 });
+
