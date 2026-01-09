@@ -1,6 +1,5 @@
 // SELECT ALL LABELS
 const labels = document.querySelectorAll(".form-control");
-
 labels.forEach((label) => {
   // wrap each letter inside <span>
   label.innerHTML = label.innerText
@@ -10,3 +9,4 @@ labels.forEach((label) => {
     })
     .join("");
 });
+
