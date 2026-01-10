@@ -6,7 +6,6 @@ buttons.forEach((btn) => {
     /* button kasta aan click dhaha kasa extra white space ka wuu wato */
     const value = btn.textContent.trim();
     /* waxan ka bilawaya qoralka laso print grayey ina iska clean garena */
-
     if (value === "AC" || value === "Ac") {
       result.value = "";
       return;
@@ -27,5 +26,6 @@ buttons.forEach((btn) => {
     result.value += value;
   });
 });
+
 
 
